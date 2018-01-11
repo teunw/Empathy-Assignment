@@ -1,4 +1,6 @@
-﻿using System.ComponentModel.Design;
+﻿using System;
+using System.ComponentModel.Design;
+using DefaultNamespace;
 using UnityEngine;
 
 public class ChildFadeScript : MonoBehaviour
@@ -90,6 +92,12 @@ public class ChildFadeScript : MonoBehaviour
             Debug.Log("camera is null");
             return true;
         }
+
+        if (!gameObject.HasComponent<Collider>())
+        {
+            return true;
+        }
+
         Plane[] planes = GeometryUtility.CalculateFrustumPlanes(_camera);
         return GeometryUtility.TestPlanesAABB(planes, gameObject.GetComponent<Collider>().bounds);
     }
