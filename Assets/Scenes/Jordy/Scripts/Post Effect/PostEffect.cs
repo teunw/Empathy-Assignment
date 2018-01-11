@@ -27,8 +27,8 @@ public class PostEffect : MonoBehaviour {
         Post_Mat = new Material(Post_Outline);
     }
 
-    void OnRenderImage(RenderTexture source, RenderTexture destination)
-    {
+   void OnRenderImage(RenderTexture source, RenderTexture destination)
+   {
         //set up a temporary camera
         TempCam.CopyFrom(AttachedCamera);
         TempCam.clearFlags = CameraClearFlags.Color;
