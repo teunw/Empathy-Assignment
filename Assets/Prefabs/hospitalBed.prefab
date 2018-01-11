@@ -240,7 +240,7 @@ GameObject:
   - component: {fileID: 4609333983281834}
   - component: {fileID: 95724885975982748}
   m_Layer: 0
-  m_Name: hospitalBed 1
+  m_Name: hospitalBed
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
