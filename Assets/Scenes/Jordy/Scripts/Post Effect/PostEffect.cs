@@ -9,16 +9,18 @@ using UnityEngine;
 
 public class PostEffect : MonoBehaviour {
 
+
     Camera AttachedCamera;
     public Shader Post_Outline;
     public Shader DrawSimple;
+    public Color glowColor;
     Camera TempCam;
     Material Post_Mat;
     // public RenderTexture TempRT;
 
 
     void Start()
-    {
+    { 
         AttachedCamera = GetComponent<Camera>();
         TempCam = new GameObject().AddComponent<Camera>();
         TempCam.enabled = false;
@@ -46,6 +48,9 @@ public class PostEffect : MonoBehaviour {
 
         //render all objects this camera can render, but with our custom shader.
         TempCam.RenderWithShader(DrawSimple, "");
+
+        Post_Mat.SetTexture("_SceneTex", source);
+        Post_Mat.SetColor("_Color", glowColor);
 
         //copy the temporary RT to the final image
         Graphics.Blit(TempRT, destination, Post_Mat);
