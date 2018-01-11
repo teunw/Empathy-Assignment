@@ -1,0 +1,1415 @@
+fileFormatVersion: 2
+<<<<<<< HEAD:Assets/Models/home01.FBX.meta
+guid: 0a9c69009a87e1e478a1bb111f17ca76
+timeCreated: 1513850832
+licenseType: Free
+=======
+guid: 63536bc8bb20fb64b8338f0b3c3c7626
+>>>>>>> 117530d0204b0e4ff21b564826d0436a6721d835:Assets/Models/MaxScene/home.max.meta
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: 3dSolid
+    100002: 3dSolid 1
+    100004: 3dSolid 10
+    100006: 3dSolid 11
+    100008: 3dSolid 12
+    100010: 3dSolid 13
+    100012: 3dSolid 14
+    100014: 3dSolid 15
+    100016: 3dSolid 2
+    100018: 3dSolid 3
+    100020: 3dSolid 4
+    100022: 3dSolid 5
+    100024: 3dSolid 6
+    100026: 3dSolid 7
+    100028: 3dSolid 8
+    100030: 3dSolid 9
+    100032: 3dSolid001
+    100034: 3dSolid002
+    100036: 3dSolid003
+    100038: beam1
+    100040: beam2
+    100042: beam3
+    100044: behind_drawer
+    100046: BOOK05
+    100048: BOOK053
+    100050: BOOK054
+    100052: BOOK055
+    100054: BOOK056
+    100056: BOOK057
+    100058: BOOK058
+    100060: BOOK059
+    100062: BOOK06
+    100064: BOOK060
+    100066: BOOK061
+    100068: BOOK07
+    100070: BOOK08
+    100072: BOOK09
+    100074: BOOK10
+    100076: BOOK11
+    100078: BOOK12
+    100080: BOOK13
+    100082: BOOK14
+    100084: BOOK17
+    100086: BOOK25
+    100088: BOOK26
+    100090: BOOK27
+    100092: BOOK28
+    100094: BOOK38
+    100096: BOOK42
+    100098: BOOK43
+    100100: BOOK44
+    100102: BOOK45
+    100104: BOOK46
+    100106: BOOK47
+    100108: BOOK48
+    100110: BOOK49
+    100112: BOOK50
+    100114: BOOK51
+    100116: BOOK52
+    100118: Books
+    100120: Bookshelf
+    100122: Box0000000007
+    100124: Box001
+    100126: Box001 1
+    100128: Box002
+    100130: Box002 1
+    100132: Box003
+    100134: Box004
+    100136: Box004 1
+    100138: Box005
+    100140: Box005 1
+    100142: Box006
+    100144: Box006 1
+    100146: Box007
+    100148: Box007 1
+    100150: Box008
+    100152: Box008 1
+    100154: Box009
+    100156: Box009 1
+    100158: Box010
+    100160: Box010 1
+    100162: Box011
+    100164: Box012
+    100166: Box013
+    100168: Box021
+    100170: Box022
+    100172: Box023
+    100174: Box024
+    100176: caps
+    100178: Chair
+    100180: Chair001
+    100182: Chair002
+    100184: Chair003
+    100186: ChamferBox001
+    100188: ChamferBox002
+    100190: ChamferBox004
+    100192: ChamferBox005
+    100194: ChamferBox006
+    100196: ChamferBox007
+    100198: ChamferBox008
+    100200: ChamferBox092
+    100202: ChamferBox093
+    100204: ChamferBox094
+    100206: ChamferBox095
+    100208: ChamferBox096
+    100210: ChamferBox097
+    100212: ChamferBox098
+    100214: ChamferBox099
+    100216: ChamferBox100
+    100218: ChamferBox101
+    100220: ChamferBox102
+    100222: ChamferBox103
+    100224: ChamferBox104
+    100226: ChamferBox105
+    100228: ChamferBox106
+    100230: ChamferBox107
+    100232: ChamferBox108
+    100234: ChamferBox109
+    100236: ChamferBox110
+    100238: ChamferBox111
+    100240: ChamferBox112
+    100242: ChamferBox113
+    100244: ChamferBox114
+    100246: ChamferBox115
+    100248: ChamferBox116
+    100250: ChamferBox117
+    100252: ChamferBox118
+    100254: ChamferBox119
+    100256: ChamferBox120
+    100258: ChamferBox121
+    100260: ChamferBox122
+    100262: ChamferBox123
+    100264: ChamferBox124
+    100266: ChamferBox125
+    100268: ChamferBox126
+    100270: ChamferBox127
+    100272: ChamferBox128
+    100274: ChamferBox129
+    100276: ChamferBox130
+    100278: ChamferBox131
+    100280: ChamferBox132
+    100282: ChamferBox133
+    100284: ChamferBox134
+    100286: ChamferBox135
+    100288: ChamferBox136
+    100290: ChamferBox137
+    100292: ChamferBox138
+    100294: ChamferBox139
+    100296: ChamferBox140
+    100298: ChamferBox141
+    100300: ChamferBox142
+    100302: ChamferBox143
+    100304: ChamferBox19
+    100306: ChamferBox328
+    100308: ChamferBox330
+    100310: ChamferBox335
+    100312: ChamferBox337
+    100314: ChamferBox339
+    100316: ChamferBox342
+    100318: ChamferBox345
+    100320: ChamferBox348
+    100322: ChamferBox352
+    100324: ChamferBox354
+    100326: ChamferBox355
+    100328: ChamferBox356
+    100330: ChamferBox357
+    100332: ChamferBox358
+    100334: ChamferBox359
+    100336: ChamferBox360
+    100338: ChamferBox361
+    100340: ChamferBox362
+    100342: ChamferBox363
+    100344: ChamferBox364
+    100346: ChamferBox365
+    100348: ChamferBox366
+    100350: ChamferBox367
+    100352: ChamferBox368
+    100354: ChamferBox369
+    100356: ChamferBox370
+    100358: ChamferBox371
+    100360: ChamferBox372
+    100362: ChamferBox56
+    100364: ChamferCyl17
+    100366: ChamferCyl18
+    100368: ChamferCyl19
+    100370: ChamferCyl20
+    100372: ChamferCyl21
+    100374: ChamferCyl22
+    100376: ChamferCyl29
+    100378: ChamferCyl30
+    100380: ChamferCyl31
+    100382: ChamferCyl32
+    100384: ChamferCyl33
+    100386: ChamferCyl34
+    100388: ChamferCyl35
+    100390: ChamferCyl36
+    100392: ChamferCyl37
+    100394: ChamferCyl38
+    100396: ChamferCyl39
+    100398: ChamferCyl40
+    100400: ChamferCyl41
+    100402: ChamferCyl42
+    100404: ChamferCyl43
+    100406: ChamferCyl44
+    100408: ChamferCyl45
+    100410: ChamferCyl46
+    100412: ChamferCyl47
+    100414: ChamferCyl48
+    100416: ChamferCyl49
+    100418: ChamferCyl50
+    100420: ChamferCyl51
+    100422: ChamferCyl52
+    100424: ChamferCyl53
+    100426: ChamferCyl54
+    100428: ChamferCyl55
+    100430: ChamferCyl56
+    100432: ChamferCyl57
+    100434: ChamferCyl58
+    100436: ChamferCyl59
+    100438: ChamferCyl60
+    100440: ChamferCyl61
+    100442: ChamferCyl62
+    100444: ChamferCyl63
+    100446: ChamferCyl64
+    100448: CoffeeTable
+    100450: Cylinder002
+    100452: Cylinder01
+    100454: Cylinder02
+    100456: Cylinder03
+    100458: Cylinder04
+    100460: Cylinder05
+    100462: Cylinder06
+    100464: Cylinder07
+    100466: Cylinder08
+    100468: Cylinder10
+    100470: Cylinder11
+    100472: Cylinder12
+    100474: Cylinder13
+    100476: Cylinder14
+    100478: Cylinder15
+    100480: Cylinder16
+    100482: Drawer
+    100484: drawer1
+    100486: drawer2
+    100488: drawer3
+    100490: floor
+    100492: Flowerpot
+    100494: Group001
+    100496: //RootNode
+    100498: main
+    100500: Pot
+    100502: Pot001
+    100504: sympoint
+    100506: Table
+    100508: Televizyon
+    100510: "Televizyon_Masas\u0131"
+    100512: Text001
+    100514: "\u043D\u043E\u0436\u043A\u0430_\u0441\u0442\u043E\u043B_001"
+    100516: "\u043D\u043E\u0436\u043A\u0430_\u0441\u0442\u043E\u043B_002"
+    100518: "\u043D\u043E\u0436\u043A\u0430_\u0441\u0442\u043E\u043B_003"
+    100520: "\u043D\u043E\u0436\u043A\u0430_\u0441\u0442\u043E\u043B_004"
+    400000: 3dSolid
+    400002: 3dSolid 1
+    400004: 3dSolid 10
+    400006: 3dSolid 11
+    400008: 3dSolid 12
+    400010: 3dSolid 13
+    400012: 3dSolid 14
+    400014: 3dSolid 15
+    400016: 3dSolid 2
+    400018: 3dSolid 3
+    400020: 3dSolid 4
+    400022: 3dSolid 5
+    400024: 3dSolid 6
+    400026: 3dSolid 7
+    400028: 3dSolid 8
+    400030: 3dSolid 9
+    400032: 3dSolid001
+    400034: 3dSolid002
+    400036: 3dSolid003
+    400038: beam1
+    400040: beam2
+    400042: beam3
+    400044: behind_drawer
+    400046: BOOK05
+    400048: BOOK053
+    400050: BOOK054
+    400052: BOOK055
+    400054: BOOK056
+    400056: BOOK057
+    400058: BOOK058
+    400060: BOOK059
+    400062: BOOK06
+    400064: BOOK060
+    400066: BOOK061
+    400068: BOOK07
+    400070: BOOK08
+    400072: BOOK09
+    400074: BOOK10
+    400076: BOOK11
+    400078: BOOK12
+    400080: BOOK13
+    400082: BOOK14
+    400084: BOOK17
+    400086: BOOK25
+    400088: BOOK26
+    400090: BOOK27
+    400092: BOOK28
+    400094: BOOK38
+    400096: BOOK42
+    400098: BOOK43
+    400100: BOOK44
+    400102: BOOK45
+    400104: BOOK46
+    400106: BOOK47
+    400108: BOOK48
+    400110: BOOK49
+    400112: BOOK50
+    400114: BOOK51
+    400116: BOOK52
+    400118: Books
+    400120: Bookshelf
+    400122: Box0000000007
+    400124: Box001
+    400126: Box001 1
+    400128: Box002
+    400130: Box002 1
+    400132: Box003
+    400134: Box004
+    400136: Box004 1
+    400138: Box005
+    400140: Box005 1
+    400142: Box006
+    400144: Box006 1
+    400146: Box007
+    400148: Box007 1
+    400150: Box008
+    400152: Box008 1
+    400154: Box009
+    400156: Box009 1
+    400158: Box010
+    400160: Box010 1
+    400162: Box011
+    400164: Box012
+    400166: Box013
+    400168: Box021
+    400170: Box022
+    400172: Box023
+    400174: Box024
+    400176: caps
+    400178: Chair
+    400180: Chair001
+    400182: Chair002
+    400184: Chair003
+    400186: ChamferBox001
+    400188: ChamferBox002
+    400190: ChamferBox004
+    400192: ChamferBox005
+    400194: ChamferBox006
+    400196: ChamferBox007
+    400198: ChamferBox008
+    400200: ChamferBox092
+    400202: ChamferBox093
+    400204: ChamferBox094
+    400206: ChamferBox095
+    400208: ChamferBox096
+    400210: ChamferBox097
+    400212: ChamferBox098
+    400214: ChamferBox099
+    400216: ChamferBox100
+    400218: ChamferBox101
+    400220: ChamferBox102
+    400222: ChamferBox103
+    400224: ChamferBox104
+    400226: ChamferBox105
+    400228: ChamferBox106
+    400230: ChamferBox107
+    400232: ChamferBox108
+    400234: ChamferBox109
+    400236: ChamferBox110
+    400238: ChamferBox111
+    400240: ChamferBox112
+    400242: ChamferBox113
+    400244: ChamferBox114
+    400246: ChamferBox115
+    400248: ChamferBox116
+    400250: ChamferBox117
+    400252: ChamferBox118
+    400254: ChamferBox119
+    400256: ChamferBox120
+    400258: ChamferBox121
+    400260: ChamferBox122
+    400262: ChamferBox123
+    400264: ChamferBox124
+    400266: ChamferBox125
+    400268: ChamferBox126
+    400270: ChamferBox127
+    400272: ChamferBox128
+    400274: ChamferBox129
+    400276: ChamferBox130
+    400278: ChamferBox131
+    400280: ChamferBox132
+    400282: ChamferBox133
+    400284: ChamferBox134
+    400286: ChamferBox135
+    400288: ChamferBox136
+    400290: ChamferBox137
+    400292: ChamferBox138
+    400294: ChamferBox139
+    400296: ChamferBox140
+    400298: ChamferBox141
+    400300: ChamferBox142
+    400302: ChamferBox143
+    400304: ChamferBox19
+    400306: ChamferBox328
+    400308: ChamferBox330
+    400310: ChamferBox335
+    400312: ChamferBox337
+    400314: ChamferBox339
+    400316: ChamferBox342
+    400318: ChamferBox345
+    400320: ChamferBox348
+    400322: ChamferBox352
+    400324: ChamferBox354
+    400326: ChamferBox355
+    400328: ChamferBox356
+    400330: ChamferBox357
+    400332: ChamferBox358
+    400334: ChamferBox359
+    400336: ChamferBox360
+    400338: ChamferBox361
+    400340: ChamferBox362
+    400342: ChamferBox363
+    400344: ChamferBox364
+    400346: ChamferBox365
+    400348: ChamferBox366
+    400350: ChamferBox367
+    400352: ChamferBox368
+    400354: ChamferBox369
+    400356: ChamferBox370
+    400358: ChamferBox371
+    400360: ChamferBox372
+    400362: ChamferBox56
+    400364: ChamferCyl17
+    400366: ChamferCyl18
+    400368: ChamferCyl19
+    400370: ChamferCyl20
+    400372: ChamferCyl21
+    400374: ChamferCyl22
+    400376: ChamferCyl29
+    400378: ChamferCyl30
+    400380: ChamferCyl31
+    400382: ChamferCyl32
+    400384: ChamferCyl33
+    400386: ChamferCyl34
+    400388: ChamferCyl35
+    400390: ChamferCyl36
+    400392: ChamferCyl37
+    400394: ChamferCyl38
+    400396: ChamferCyl39
+    400398: ChamferCyl40
+    400400: ChamferCyl41
+    400402: ChamferCyl42
+    400404: ChamferCyl43
+    400406: ChamferCyl44
+    400408: ChamferCyl45
+    400410: ChamferCyl46
+    400412: ChamferCyl47
+    400414: ChamferCyl48
+    400416: ChamferCyl49
+    400418: ChamferCyl50
+    400420: ChamferCyl51
+    400422: ChamferCyl52
+    400424: ChamferCyl53
+    400426: ChamferCyl54
+    400428: ChamferCyl55
+    400430: ChamferCyl56
+    400432: ChamferCyl57
+    400434: ChamferCyl58
+    400436: ChamferCyl59
+    400438: ChamferCyl60
+    400440: ChamferCyl61
+    400442: ChamferCyl62
+    400444: ChamferCyl63
+    400446: ChamferCyl64
+    400448: CoffeeTable
+    400450: Cylinder002
+    400452: Cylinder01
+    400454: Cylinder02
+    400456: Cylinder03
+    400458: Cylinder04
+    400460: Cylinder05
+    400462: Cylinder06
+    400464: Cylinder07
+    400466: Cylinder08
+    400468: Cylinder10
+    400470: Cylinder11
+    400472: Cylinder12
+    400474: Cylinder13
+    400476: Cylinder14
+    400478: Cylinder15
+    400480: Cylinder16
+    400482: Drawer
+    400484: drawer1
+    400486: drawer2
+    400488: drawer3
+    400490: floor
+    400492: Flowerpot
+    400494: Group001
+    400496: //RootNode
+    400498: main
+    400500: Pot
+    400502: Pot001
+    400504: sympoint
+    400506: Table
+    400508: Televizyon
+    400510: "Televizyon_Masas\u0131"
+    400512: Text001
+    400514: "\u043D\u043E\u0436\u043A\u0430_\u0441\u0442\u043E\u043B_001"
+    400516: "\u043D\u043E\u0436\u043A\u0430_\u0441\u0442\u043E\u043B_002"
+    400518: "\u043D\u043E\u0436\u043A\u0430_\u0441\u0442\u043E\u043B_003"
+    400520: "\u043D\u043E\u0436\u043A\u0430_\u0441\u0442\u043E\u043B_004"
+    2100000: 01 - Default
+    2100002: '20 - Default #2'
+    2100004: 20 - Default
+    2100006: 06 - Default
+    2100008: 19 - Default
+    2100010: '20 - Default #1'
+<<<<<<< HEAD:Assets/Models/home01.FBX.meta
+    2100012: "\u0434\u0435\u0440\u0435\u0432\u043E"
+    2100014: "\u043A\u043E\u0436\u0430 \u0441\u0442\u0443\u043B\u044C\u044F"
+    2100016: 'Material #0'
+    2100018: 05 - Default
+    2100020: 'Material #61'
+    2100022: 'Material #2'
+    2100024: Glaze
+    2100026: Glass Matte 3
+    2100028: plastic_12
+    2100030: steklo
+    2100032: MetalChromeObject
+    2100034: Archinteriors_11_07_04
+    2100036: FRONT
+    2100038: WHITE PLASTIC
+    2100040: 'Material #59 Slot #1'
+    2100042: 'Material #59 Slot #2'
+    2100044: PLASTIC__PVC__Opaque Black
+    2100046: PLASTIC__PVC__Opaque White
+    2100048: PLASTIC__PVC Foam Board__White
+    2100050: 'Material #60'
+=======
+    2100012: 'Material #61'
+    2100014: 'Material #62'
+    2100016: 'Material #0'
+    2100018: 05 - Default
+    2100020: 'Material #63'
+    2100022: 'Material #2'
+    2100024: 'Material #64'
+    2100026: 'Material #65'
+    2100028: 'Material #66'
+    2100030: 'Material #67'
+    2100032: 'Material #68'
+    2100034: 'Material #69'
+    2100036: 'Material #70'
+    2100038: 'Material #71'
+    2100040: 'Material #72'
+    2100042: 'Material #73'
+    2100044: 'Material #74'
+    2100046: 'Material #75'
+    2100048: 'Material #76'
+    2100050: 'Material #77'
+    2100052: 'Material #78'
+    2100054: 'Material #79'
+    2100056: 'Material #80'
+    2100058: 'Material #81'
+    2100060: 'Material #59 Slot #1'
+    2100062: 'Material #59 Slot #2'
+    2100064: 'Material #82'
+    2100066: 'Material #83'
+    2100068: 'Material #84'
+    2100070: 'Material #60'
+>>>>>>> 117530d0204b0e4ff21b564826d0436a6721d835:Assets/Models/MaxScene/home.max.meta
+    2300000: 3dSolid
+    2300002: 3dSolid 1
+    2300004: 3dSolid 10
+    2300006: 3dSolid 11
+    2300008: 3dSolid 12
+    2300010: 3dSolid 13
+    2300012: 3dSolid 14
+    2300014: 3dSolid 15
+    2300016: 3dSolid 2
+    2300018: 3dSolid 3
+    2300020: 3dSolid 4
+    2300022: 3dSolid 5
+    2300024: 3dSolid 6
+    2300026: 3dSolid 7
+    2300028: 3dSolid 8
+    2300030: 3dSolid 9
+    2300032: 3dSolid001
+    2300034: 3dSolid002
+    2300036: 3dSolid003
+    2300038: beam1
+    2300040: beam2
+    2300042: beam3
+    2300044: behind_drawer
+    2300046: BOOK05
+    2300048: BOOK053
+    2300050: BOOK054
+    2300052: BOOK055
+    2300054: BOOK056
+    2300056: BOOK057
+    2300058: BOOK058
+    2300060: BOOK059
+    2300062: BOOK06
+    2300064: BOOK060
+    2300066: BOOK061
+    2300068: BOOK07
+    2300070: BOOK08
+    2300072: BOOK09
+    2300074: BOOK10
+    2300076: BOOK11
+    2300078: BOOK12
+    2300080: BOOK13
+    2300082: BOOK14
+    2300084: BOOK17
+    2300086: BOOK25
+    2300088: BOOK26
+    2300090: BOOK27
+    2300092: BOOK28
+    2300094: BOOK38
+    2300096: BOOK42
+    2300098: BOOK43
+    2300100: BOOK44
+    2300102: BOOK45
+    2300104: BOOK46
+    2300106: BOOK47
+    2300108: BOOK48
+    2300110: BOOK49
+    2300112: BOOK50
+    2300114: BOOK51
+    2300116: BOOK52
+    2300118: Box0000000007
+    2300120: Box001
+    2300122: Box001 1
+    2300124: Box002
+    2300126: Box002 1
+    2300128: Box003
+    2300130: Box004
+    2300132: Box004 1
+    2300134: Box005
+    2300136: Box005 1
+    2300138: Box006
+    2300140: Box006 1
+    2300142: Box007
+    2300144: Box007 1
+    2300146: Box008
+    2300148: Box008 1
+    2300150: Box009
+    2300152: Box009 1
+    2300154: Box010
+    2300156: Box010 1
+    2300158: Box011
+    2300160: Box012
+    2300162: Box013
+    2300164: Box021
+    2300166: Box022
+    2300168: Box023
+    2300170: Box024
+    2300172: caps
+    2300174: ChamferBox001
+    2300176: ChamferBox002
+    2300178: ChamferBox004
+    2300180: ChamferBox005
+    2300182: ChamferBox006
+    2300184: ChamferBox007
+    2300186: ChamferBox008
+    2300188: ChamferBox092
+    2300190: ChamferBox093
+    2300192: ChamferBox094
+    2300194: ChamferBox095
+    2300196: ChamferBox096
+    2300198: ChamferBox097
+    2300200: ChamferBox098
+    2300202: ChamferBox099
+    2300204: ChamferBox100
+    2300206: ChamferBox101
+    2300208: ChamferBox102
+    2300210: ChamferBox103
+    2300212: ChamferBox104
+    2300214: ChamferBox105
+    2300216: ChamferBox106
+    2300218: ChamferBox107
+    2300220: ChamferBox108
+    2300222: ChamferBox109
+    2300224: ChamferBox110
+    2300226: ChamferBox111
+    2300228: ChamferBox112
+    2300230: ChamferBox113
+    2300232: ChamferBox114
+    2300234: ChamferBox115
+    2300236: ChamferBox116
+    2300238: ChamferBox117
+    2300240: ChamferBox118
+    2300242: ChamferBox119
+    2300244: ChamferBox120
+    2300246: ChamferBox121
+    2300248: ChamferBox122
+    2300250: ChamferBox123
+    2300252: ChamferBox124
+    2300254: ChamferBox125
+    2300256: ChamferBox126
+    2300258: ChamferBox127
+    2300260: ChamferBox128
+    2300262: ChamferBox129
+    2300264: ChamferBox130
+    2300266: ChamferBox131
+    2300268: ChamferBox132
+    2300270: ChamferBox133
+    2300272: ChamferBox134
+    2300274: ChamferBox135
+    2300276: ChamferBox136
+    2300278: ChamferBox137
+    2300280: ChamferBox138
+    2300282: ChamferBox139
+    2300284: ChamferBox140
+    2300286: ChamferBox141
+    2300288: ChamferBox142
+    2300290: ChamferBox143
+    2300292: ChamferBox19
+    2300294: ChamferBox328
+    2300296: ChamferBox330
+    2300298: ChamferBox335
+    2300300: ChamferBox337
+    2300302: ChamferBox339
+    2300304: ChamferBox342
+    2300306: ChamferBox345
+    2300308: ChamferBox348
+    2300310: ChamferBox352
+    2300312: ChamferBox354
+    2300314: ChamferBox355
+    2300316: ChamferBox356
+    2300318: ChamferBox357
+    2300320: ChamferBox358
+    2300322: ChamferBox359
+    2300324: ChamferBox360
+    2300326: ChamferBox361
+    2300328: ChamferBox362
+    2300330: ChamferBox363
+    2300332: ChamferBox364
+    2300334: ChamferBox365
+    2300336: ChamferBox366
+    2300338: ChamferBox367
+    2300340: ChamferBox368
+    2300342: ChamferBox369
+    2300344: ChamferBox370
+    2300346: ChamferBox371
+    2300348: ChamferBox372
+    2300350: ChamferBox56
+    2300352: ChamferCyl17
+    2300354: ChamferCyl18
+    2300356: ChamferCyl19
+    2300358: ChamferCyl20
+    2300360: ChamferCyl21
+    2300362: ChamferCyl22
+    2300364: ChamferCyl29
+    2300366: ChamferCyl30
+    2300368: ChamferCyl31
+    2300370: ChamferCyl32
+    2300372: ChamferCyl33
+    2300374: ChamferCyl34
+    2300376: ChamferCyl35
+    2300378: ChamferCyl36
+    2300380: ChamferCyl37
+    2300382: ChamferCyl38
+    2300384: ChamferCyl39
+    2300386: ChamferCyl40
+    2300388: ChamferCyl41
+    2300390: ChamferCyl42
+    2300392: ChamferCyl43
+    2300394: ChamferCyl44
+    2300396: ChamferCyl45
+    2300398: ChamferCyl46
+    2300400: ChamferCyl47
+    2300402: ChamferCyl48
+    2300404: ChamferCyl49
+    2300406: ChamferCyl50
+    2300408: ChamferCyl51
+    2300410: ChamferCyl52
+    2300412: ChamferCyl53
+    2300414: ChamferCyl54
+    2300416: ChamferCyl55
+    2300418: ChamferCyl56
+    2300420: ChamferCyl57
+    2300422: ChamferCyl58
+    2300424: ChamferCyl59
+    2300426: ChamferCyl60
+    2300428: ChamferCyl61
+    2300430: ChamferCyl62
+    2300432: ChamferCyl63
+    2300434: ChamferCyl64
+    2300436: Cylinder002
+    2300438: Cylinder01
+    2300440: Cylinder02
+    2300442: Cylinder03
+    2300444: Cylinder04
+    2300446: Cylinder05
+    2300448: Cylinder06
+    2300450: Cylinder07
+    2300452: Cylinder08
+    2300454: Cylinder10
+    2300456: Cylinder11
+    2300458: Cylinder12
+    2300460: Cylinder13
+    2300462: Cylinder14
+    2300464: Cylinder15
+    2300466: Cylinder16
+    2300468: drawer1
+    2300470: drawer2
+    2300472: drawer3
+    2300474: floor
+    2300476: Flowerpot
+    2300478: main
+    2300480: Pot
+    2300482: Pot001
+    2300484: Text001
+    2300486: "\u043D\u043E\u0436\u043A\u0430_\u0441\u0442\u043E\u043B_001"
+    2300488: "\u043D\u043E\u0436\u043A\u0430_\u0441\u0442\u043E\u043B_002"
+    2300490: "\u043D\u043E\u0436\u043A\u0430_\u0441\u0442\u043E\u043B_003"
+    2300492: "\u043D\u043E\u0436\u043A\u0430_\u0441\u0442\u043E\u043B_004"
+    3300000: 3dSolid
+    3300002: 3dSolid 1
+    3300004: 3dSolid 10
+    3300006: 3dSolid 11
+    3300008: 3dSolid 12
+    3300010: 3dSolid 13
+    3300012: 3dSolid 14
+    3300014: 3dSolid 15
+    3300016: 3dSolid 2
+    3300018: 3dSolid 3
+    3300020: 3dSolid 4
+    3300022: 3dSolid 5
+    3300024: 3dSolid 6
+    3300026: 3dSolid 7
+    3300028: 3dSolid 8
+    3300030: 3dSolid 9
+    3300032: 3dSolid001
+    3300034: 3dSolid002
+    3300036: 3dSolid003
+    3300038: beam1
+    3300040: beam2
+    3300042: beam3
+    3300044: behind_drawer
+    3300046: BOOK05
+    3300048: BOOK053
+    3300050: BOOK054
+    3300052: BOOK055
+    3300054: BOOK056
+    3300056: BOOK057
+    3300058: BOOK058
+    3300060: BOOK059
+    3300062: BOOK06
+    3300064: BOOK060
+    3300066: BOOK061
+    3300068: BOOK07
+    3300070: BOOK08
+    3300072: BOOK09
+    3300074: BOOK10
+    3300076: BOOK11
+    3300078: BOOK12
+    3300080: BOOK13
+    3300082: BOOK14
+    3300084: BOOK17
+    3300086: BOOK25
+    3300088: BOOK26
+    3300090: BOOK27
+    3300092: BOOK28
+    3300094: BOOK38
+    3300096: BOOK42
+    3300098: BOOK43
+    3300100: BOOK44
+    3300102: BOOK45
+    3300104: BOOK46
+    3300106: BOOK47
+    3300108: BOOK48
+    3300110: BOOK49
+    3300112: BOOK50
+    3300114: BOOK51
+    3300116: BOOK52
+    3300118: Box0000000007
+    3300120: Box001
+    3300122: Box001 1
+    3300124: Box002
+    3300126: Box002 1
+    3300128: Box003
+    3300130: Box004
+    3300132: Box004 1
+    3300134: Box005
+    3300136: Box005 1
+    3300138: Box006
+    3300140: Box006 1
+    3300142: Box007
+    3300144: Box007 1
+    3300146: Box008
+    3300148: Box008 1
+    3300150: Box009
+    3300152: Box009 1
+    3300154: Box010
+    3300156: Box010 1
+    3300158: Box011
+    3300160: Box012
+    3300162: Box013
+    3300164: Box021
+    3300166: Box022
+    3300168: Box023
+    3300170: Box024
+    3300172: caps
+    3300174: ChamferBox001
+    3300176: ChamferBox002
+    3300178: ChamferBox004
+    3300180: ChamferBox005
+    3300182: ChamferBox006
+    3300184: ChamferBox007
+    3300186: ChamferBox008
+    3300188: ChamferBox092
+    3300190: ChamferBox093
+    3300192: ChamferBox094
+    3300194: ChamferBox095
+    3300196: ChamferBox096
+    3300198: ChamferBox097
+    3300200: ChamferBox098
+    3300202: ChamferBox099
+    3300204: ChamferBox100
+    3300206: ChamferBox101
+    3300208: ChamferBox102
+    3300210: ChamferBox103
+    3300212: ChamferBox104
+    3300214: ChamferBox105
+    3300216: ChamferBox106
+    3300218: ChamferBox107
+    3300220: ChamferBox108
+    3300222: ChamferBox109
+    3300224: ChamferBox110
+    3300226: ChamferBox111
+    3300228: ChamferBox112
+    3300230: ChamferBox113
+    3300232: ChamferBox114
+    3300234: ChamferBox115
+    3300236: ChamferBox116
+    3300238: ChamferBox117
+    3300240: ChamferBox118
+    3300242: ChamferBox119
+    3300244: ChamferBox120
+    3300246: ChamferBox121
+    3300248: ChamferBox122
+    3300250: ChamferBox123
+    3300252: ChamferBox124
+    3300254: ChamferBox125
+    3300256: ChamferBox126
+    3300258: ChamferBox127
+    3300260: ChamferBox128
+    3300262: ChamferBox129
+    3300264: ChamferBox130
+    3300266: ChamferBox131
+    3300268: ChamferBox132
+    3300270: ChamferBox133
+    3300272: ChamferBox134
+    3300274: ChamferBox135
+    3300276: ChamferBox136
+    3300278: ChamferBox137
+    3300280: ChamferBox138
+    3300282: ChamferBox139
+    3300284: ChamferBox140
+    3300286: ChamferBox141
+    3300288: ChamferBox142
+    3300290: ChamferBox143
+    3300292: ChamferBox19
+    3300294: ChamferBox328
+    3300296: ChamferBox330
+    3300298: ChamferBox335
+    3300300: ChamferBox337
+    3300302: ChamferBox339
+    3300304: ChamferBox342
+    3300306: ChamferBox345
+    3300308: ChamferBox348
+    3300310: ChamferBox352
+    3300312: ChamferBox354
+    3300314: ChamferBox355
+    3300316: ChamferBox356
+    3300318: ChamferBox357
+    3300320: ChamferBox358
+    3300322: ChamferBox359
+    3300324: ChamferBox360
+    3300326: ChamferBox361
+    3300328: ChamferBox362
+    3300330: ChamferBox363
+    3300332: ChamferBox364
+    3300334: ChamferBox365
+    3300336: ChamferBox366
+    3300338: ChamferBox367
+    3300340: ChamferBox368
+    3300342: ChamferBox369
+    3300344: ChamferBox370
+    3300346: ChamferBox371
+    3300348: ChamferBox372
+    3300350: ChamferBox56
+    3300352: ChamferCyl17
+    3300354: ChamferCyl18
+    3300356: ChamferCyl19
+    3300358: ChamferCyl20
+    3300360: ChamferCyl21
+    3300362: ChamferCyl22
+    3300364: ChamferCyl29
+    3300366: ChamferCyl30
+    3300368: ChamferCyl31
+    3300370: ChamferCyl32
+    3300372: ChamferCyl33
+    3300374: ChamferCyl34
+    3300376: ChamferCyl35
+    3300378: ChamferCyl36
+    3300380: ChamferCyl37
+    3300382: ChamferCyl38
+    3300384: ChamferCyl39
+    3300386: ChamferCyl40
+    3300388: ChamferCyl41
+    3300390: ChamferCyl42
+    3300392: ChamferCyl43
+    3300394: ChamferCyl44
+    3300396: ChamferCyl45
+    3300398: ChamferCyl46
+    3300400: ChamferCyl47
+    3300402: ChamferCyl48
+    3300404: ChamferCyl49
+    3300406: ChamferCyl50
+    3300408: ChamferCyl51
+    3300410: ChamferCyl52
+    3300412: ChamferCyl53
+    3300414: ChamferCyl54
+    3300416: ChamferCyl55
+    3300418: ChamferCyl56
+    3300420: ChamferCyl57
+    3300422: ChamferCyl58
+    3300424: ChamferCyl59
+    3300426: ChamferCyl60
+    3300428: ChamferCyl61
+    3300430: ChamferCyl62
+    3300432: ChamferCyl63
+    3300434: ChamferCyl64
+    3300436: Cylinder002
+    3300438: Cylinder01
+    3300440: Cylinder02
+    3300442: Cylinder03
+    3300444: Cylinder04
+    3300446: Cylinder05
+    3300448: Cylinder06
+    3300450: Cylinder07
+    3300452: Cylinder08
+    3300454: Cylinder10
+    3300456: Cylinder11
+    3300458: Cylinder12
+    3300460: Cylinder13
+    3300462: Cylinder14
+    3300464: Cylinder15
+    3300466: Cylinder16
+    3300468: drawer1
+    3300470: drawer2
+    3300472: drawer3
+    3300474: floor
+    3300476: Flowerpot
+    3300478: main
+    3300480: Pot
+    3300482: Pot001
+    3300484: Text001
+    3300486: "\u043D\u043E\u0436\u043A\u0430_\u0441\u0442\u043E\u043B_001"
+    3300488: "\u043D\u043E\u0436\u043A\u0430_\u0441\u0442\u043E\u043B_002"
+    3300490: "\u043D\u043E\u0436\u043A\u0430_\u0441\u0442\u043E\u043B_003"
+    3300492: "\u043D\u043E\u0436\u043A\u0430_\u0441\u0442\u043E\u043B_004"
+    4300000: floor
+    4300002: Cylinder002
+    4300004: Box001
+    4300006: Box002
+    4300008: Box004
+    4300010: Box005
+    4300012: Box006
+    4300014: Box007
+    4300016: Box009
+    4300018: Box010
+    4300020: Box008
+    4300022: ChamferBox092
+    4300024: Box021
+    4300026: ChamferBox093
+    4300028: ChamferBox094
+    4300030: ChamferBox095
+    4300032: ChamferBox096
+    4300034: ChamferBox097
+    4300036: ChamferBox098
+    4300038: ChamferBox099
+    4300040: ChamferBox100
+    4300042: ChamferBox101
+    4300044: ChamferBox102
+    4300046: ChamferBox103
+    4300048: ChamferBox104
+    4300050: ChamferBox004
+    4300052: "\u043D\u043E\u0436\u043A\u0430_\u0441\u0442\u043E\u043B_004"
+    4300054: ChamferBox007
+    4300056: ChamferBox006
+    4300058: "\u043D\u043E\u0436\u043A\u0430_\u0441\u0442\u043E\u043B_003"
+    4300060: ChamferBox005
+    4300062: "\u043D\u043E\u0436\u043A\u0430_\u0441\u0442\u043E\u043B_001"
+    4300064: "\u043D\u043E\u0436\u043A\u0430_\u0441\u0442\u043E\u043B_002"
+    4300066: ChamferBox008
+    4300068: Box022
+    4300070: ChamferBox105
+    4300072: ChamferBox106
+    4300074: ChamferBox107
+    4300076: ChamferBox108
+    4300078: ChamferBox109
+    4300080: ChamferBox110
+    4300082: ChamferBox111
+    4300084: ChamferBox112
+    4300086: ChamferBox113
+    4300088: ChamferBox114
+    4300090: ChamferBox115
+    4300092: ChamferBox116
+    4300094: ChamferBox117
+    4300096: Box023
+    4300098: ChamferBox118
+    4300100: ChamferBox119
+    4300102: ChamferBox120
+    4300104: ChamferBox121
+    4300106: ChamferBox122
+    4300108: ChamferBox123
+    4300110: ChamferBox124
+    4300112: ChamferBox125
+    4300114: ChamferBox126
+    4300116: ChamferBox127
+    4300118: ChamferBox128
+    4300120: ChamferBox129
+    4300122: ChamferBox130
+    4300124: Box024
+    4300126: ChamferBox131
+    4300128: ChamferBox132
+    4300130: ChamferBox133
+    4300132: ChamferBox134
+    4300134: ChamferBox135
+    4300136: ChamferBox136
+    4300138: ChamferBox137
+    4300140: ChamferBox138
+    4300142: ChamferBox139
+    4300144: ChamferBox140
+    4300146: ChamferBox141
+    4300148: ChamferBox142
+    4300150: ChamferBox143
+    4300152: 3dSolid
+    4300154: 3dSolid
+    4300156: 3dSolid
+    4300158: 3dSolid
+    4300160: 3dSolid
+    4300162: 3dSolid
+    4300164: 3dSolid
+    4300166: 3dSolid
+    4300168: 3dSolid
+    4300170: 3dSolid
+    4300172: 3dSolid
+    4300174: 3dSolid
+    4300176: 3dSolid
+    4300178: 3dSolid
+    4300180: 3dSolid
+    4300182: 3dSolid
+    4300184: 3dSolid001
+    4300186: 3dSolid002
+    4300188: 3dSolid003
+    4300190: main
+    4300192: drawer1
+    4300194: drawer2
+    4300196: drawer3
+    4300198: beam1
+    4300200: beam3
+    4300202: beam2
+    4300204: behind_drawer
+    4300206: caps
+    4300208: Flowerpot
+    4300210: Box0000000007
+    4300212: ChamferBox19
+    4300214: ChamferBox56
+    4300216: ChamferBox328
+    4300218: ChamferBox330
+    4300220: ChamferBox335
+    4300222: ChamferBox337
+    4300224: ChamferBox339
+    4300226: ChamferBox342
+    4300228: ChamferBox345
+    4300230: ChamferBox348
+    4300232: ChamferBox352
+    4300234: ChamferBox354
+    4300236: ChamferBox355
+    4300238: ChamferBox356
+    4300240: ChamferBox357
+    4300242: ChamferBox358
+    4300244: ChamferBox359
+    4300246: ChamferBox360
+    4300248: ChamferBox361
+    4300250: ChamferBox362
+    4300252: ChamferBox363
+    4300254: ChamferBox364
+    4300256: ChamferBox365
+    4300258: ChamferBox366
+    4300260: ChamferBox367
+    4300262: ChamferBox368
+    4300264: ChamferBox369
+    4300266: ChamferBox370
+    4300268: ChamferBox371
+    4300270: ChamferBox372
+    4300272: ChamferCyl17
+    4300274: ChamferCyl18
+    4300276: ChamferCyl19
+    4300278: ChamferCyl20
+    4300280: ChamferCyl21
+    4300282: ChamferCyl22
+    4300284: ChamferCyl29
+    4300286: ChamferCyl30
+    4300288: ChamferCyl31
+    4300290: ChamferCyl32
+    4300292: ChamferCyl33
+    4300294: ChamferCyl34
+    4300296: ChamferCyl35
+    4300298: ChamferCyl36
+    4300300: ChamferCyl37
+    4300302: ChamferCyl38
+    4300304: ChamferCyl39
+    4300306: ChamferCyl40
+    4300308: ChamferCyl41
+    4300310: ChamferCyl42
+    4300312: ChamferCyl43
+    4300314: ChamferCyl44
+    4300316: ChamferCyl45
+    4300318: ChamferCyl46
+    4300320: ChamferCyl47
+    4300322: ChamferCyl48
+    4300324: ChamferCyl49
+    4300326: ChamferCyl50
+    4300328: ChamferCyl51
+    4300330: ChamferCyl52
+    4300332: ChamferCyl53
+    4300334: ChamferCyl54
+    4300336: ChamferCyl55
+    4300338: ChamferCyl56
+    4300340: ChamferCyl57
+    4300342: ChamferCyl58
+    4300344: ChamferCyl59
+    4300346: ChamferCyl60
+    4300348: ChamferCyl61
+    4300350: ChamferCyl62
+    4300352: ChamferCyl63
+    4300354: ChamferCyl64
+    4300356: Cylinder01
+    4300358: Cylinder02
+    4300360: Cylinder03
+    4300362: Cylinder04
+    4300364: Cylinder05
+    4300366: Cylinder06
+    4300368: Cylinder07
+    4300370: Cylinder08
+    4300372: Cylinder10
+    4300374: Cylinder11
+    4300376: Cylinder12
+    4300378: Cylinder13
+    4300380: Cylinder14
+    4300382: Cylinder15
+    4300384: Cylinder16
+    4300386: Pot
+    4300388: BOOK05
+    4300390: BOOK06
+    4300392: BOOK07
+    4300394: BOOK08
+    4300396: BOOK09
+    4300398: BOOK10
+    4300400: BOOK11
+    4300402: BOOK12
+    4300404: BOOK13
+    4300406: BOOK14
+    4300408: BOOK17
+    4300410: BOOK25
+    4300412: BOOK26
+    4300414: BOOK27
+    4300416: BOOK28
+    4300418: BOOK38
+    4300420: BOOK42
+    4300422: BOOK43
+    4300424: BOOK44
+    4300426: BOOK45
+    4300428: BOOK46
+    4300430: BOOK47
+    4300432: BOOK48
+    4300434: BOOK49
+    4300436: BOOK50
+    4300438: BOOK51
+    4300440: BOOK52
+    4300442: BOOK053
+    4300444: BOOK054
+    4300446: BOOK055
+    4300448: BOOK056
+    4300450: BOOK057
+    4300452: BOOK058
+    4300454: BOOK059
+    4300456: BOOK060
+    4300458: BOOK061
+    4300460: Pot001
+    4300462: Box001
+    4300464: Box002
+    4300466: Box003
+    4300468: Text001
+    4300470: ChamferBox002
+    4300472: ChamferBox001
+    4300474: Box013
+    4300476: Box012
+    4300478: Box011
+    4300480: Box010
+    4300482: Box009
+    4300484: Box008
+    4300486: Box007
+    4300488: Box006
+    4300490: Box005
+    4300492: Box004
+    7400000: Take 001
+    9500000: //RootNode
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
