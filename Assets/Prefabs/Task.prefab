@@ -52,5 +52,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   postIt: {fileID: 0}
-  startState: 1
-  description: Boodschappen doen.
+  startState: 0
+  description: '[Een taak]'
