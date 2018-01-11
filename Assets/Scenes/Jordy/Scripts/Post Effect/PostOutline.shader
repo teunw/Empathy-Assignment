@@ -6,6 +6,7 @@ Shader "Custom/Post Outline"
     {
         _MainTex("Main Texture",2D)="black"{}
         _SceneTex("Scene Texture",2D)="black"{}
+		_Color("Color", Color) = (0, 1, 1, 1)
     }
     SubShader 
     {
@@ -45,7 +46,7 @@ Shader "Custom/Post Outline"
             half frag(v2f i) : COLOR 
             {
                 //arbitrary number of iterations for now
-                int NumberOfIterations=20;
+                int NumberOfIterations=30;
  
                 //split texel size into smaller words
                 float TX_x=_MainTex_TexelSize.x;
@@ -57,14 +58,7 @@ Shader "Custom/Post Outline"
                 for(int k=0;k<NumberOfIterations;k+=1)
                 {
                     //increase our output color by the pixels in the area
-                    ColorIntensityInRadius+=tex2D(
-                                                    _MainTex, 
-                                                    i.uvs.xy+float2
-                                                                (
-                                                                    (k-NumberOfIterations/2)*TX_x,
-                                                                    0
-                                                                )
-                                                    ).r/NumberOfIterations;
+                    ColorIntensityInRadius+=tex2D(_MainTex, i.uvs.xy + float2((k-NumberOfIterations/2)*TX_x, 0)).r / NumberOfIterations;
                 }
  
                 //output some intensity of teal
@@ -84,6 +78,7 @@ Shader "Custom/Post Outline"
  
             sampler2D _MainTex;
             sampler2D _SceneTex;
+			half4 _Color;
              
             //we need to declare a sampler2D by the name of "_GrabTexture" that Unity can write to during GrabPass{}
             sampler2D _GrabTexture;
@@ -118,7 +113,7 @@ Shader "Custom/Post Outline"
             half4 frag(v2f i) : COLOR 
             {
                 //arbitrary number of iterations for now
-                int NumberOfIterations=20;
+                int NumberOfIterations=30;
  
                 //split texel size into smaller words
                 float TX_y=_GrabTexture_TexelSize.y;
@@ -129,7 +124,7 @@ Shader "Custom/Post Outline"
                 //if something already exists underneath the fragment (in the original texture), discard the fragment.
                 if(tex2D(_MainTex,i.uvs.xy).r>0)
                 {
-                    return tex2D(_SceneTex,float2(i.uvs.x,1-i.uvs.y));
+                    return tex2D(_SceneTex,float2(i.uvs.x,i.uvs.y));
                 }
  
                 //for every iteration we need to do vertically
@@ -148,7 +143,7 @@ Shader "Custom/Post Outline"
  
  
                 //this is alpha blending, but we can't use HW blending unless we make a third pass, so this is probably cheaper.
-                half4 outcolor=ColorIntensityInRadius*half4(0,1,1,1)*2+(1-ColorIntensityInRadius)*tex2D(_SceneTex,float2(i.uvs.x,1-i.uvs.y));
+                half4 outcolor=ColorIntensityInRadius*_Color*2+(1-ColorIntensityInRadius)*tex2D(_SceneTex,float2(i.uvs.x,i.uvs.y));
                 return outcolor;
             }
              
