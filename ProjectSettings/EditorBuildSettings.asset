@@ -9,5 +9,8 @@ EditorBuildSettings:
     path: Assets/Scenes/Teun_HomeScene.unity
     guid: ad5e5ba7744b1fd41ba9e78c89f05be1
   - enabled: 1
+    path: Assets/Scenes/Test Scenes/Lander/Story.unity
+    guid: 9138ac4ec36d5264fa2cb71d7bbcdfd8
+  - enabled: 1
     path: Assets/MidStory.unity
     guid: 8f2a5653f9dcdf24d9098c37d28f0b5b

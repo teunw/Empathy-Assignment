@@ -7,22 +7,27 @@ public class Teleport : MonoBehaviour {
     public string levelToLoad;
     public int wait;
 
+	private bool canTeleport = false;
+
 	// Use this for initialization
 	void Start () {
         StartCoroutine(TeleportAvailable());
+	}
+
+	public void SwitchScene()
+	{
+		Debug.Log ("TRIGGER PRESSED");
+
+		if (canTeleport)
+		{
+			Application.LoadLevel(levelToLoad);
+		}
 	}
 	
 	// Update is called once per frame
 	IEnumerator TeleportAvailable () {
 
         yield return new WaitForSeconds(wait);
-
-        while(true)
-        {
-            //Debug.Log("teleport available now");
-            if (Input.anyKey)
-                Application.LoadLevel(levelToLoad);
-            yield return null;
-        }     
+		canTeleport = true;
 	}
 }
