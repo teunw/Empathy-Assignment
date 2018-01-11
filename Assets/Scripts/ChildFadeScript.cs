@@ -55,7 +55,7 @@ public class ChildFadeScript : MonoBehaviour
     {
         foreach (Behaviour component in current.GetComponents<Behaviour>())
         {
-            if (component is ChildFadeScript) continue;
+            if (component is ChildFadeScript || component == null) continue;
             component.enabled = ShouldAppear;
         }
         foreach (Renderer rend in current.GetComponents<Renderer>())
@@ -93,10 +93,10 @@ public class ChildFadeScript : MonoBehaviour
             return true;
         }
 
-        if (!gameObject.HasComponent<Collider>())
-        {
-            return true;
-        }
+//        if (!gameObject.HasComponent<Collider>())
+//        {
+//            return true;
+//        }
 
         Plane[] planes = GeometryUtility.CalculateFrustumPlanes(_camera);
         return GeometryUtility.TestPlanesAABB(planes, gameObject.GetComponent<Collider>().bounds);
