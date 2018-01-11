@@ -7,8 +7,6 @@ using VRTK;
 public class Teapot : MonoBehaviour
 {
     public ParticleSystem ParticleSystem;
-    public AudioSource BoilingSource;
-    
     public float HotTime = 20f;
     public float DropTime = 2f;
     public bool ShouldBeDropped = true;
@@ -16,8 +14,7 @@ public class Teapot : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-        if (this.ParticleSystem == null) ParticleSystem = GetComponentInChildren<ParticleSystem>();
-        if (this.BoilingSource == null) BoilingSource = GetComponentInChildren<AudioSource>();
+        if (ParticleSystem == null) ParticleSystem = GetComponentInChildren<ParticleSystem>();
     }
 
     public void SetBoiling()
@@ -49,15 +46,5 @@ public class Teapot : MonoBehaviour
 
         yield return new WaitForSeconds(HotTime);
         this.ParticleSystem.Stop();
-    }
-
-    public void StartBoilSound()
-    {
-        this.BoilingSource.Play();
-    }
-
-    public void StopBoilSound()
-    {
-        this.BoilingSource.Stop();
     }
 }
