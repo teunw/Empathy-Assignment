@@ -13,6 +13,7 @@ public class TopFadeScript : MonoBehaviour
     public Transform Hospital2;
     private MiddleFadeScript _hospital2FadeScript;
 
+    public bool ShouldBeCalledAfterSeconds;
     public int SecondsToWait = 5;
 
     void Start()
@@ -38,8 +39,10 @@ public class TopFadeScript : MonoBehaviour
             _hospital2FadeScript.IsActive = false;
             _hospital2FadeScript.SetIsActive(Hospital2);
         }
-
-        StartCoroutine(Hold(SecondsToWait));
+        if (ShouldBeCalledAfterSeconds)
+        {
+            StartCoroutine(Hold(SecondsToWait));
+        }
     }
 
     private IEnumerator Hold(int seconds)
