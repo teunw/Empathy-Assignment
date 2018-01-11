@@ -47,8 +47,8 @@ GameObject:
   - component: {fileID: 114038165437269100}
   - component: {fileID: 54838264054925630}
   - component: {fileID: 75134764360565628}
-  - component: {fileID: 114716971014086000}
-  - component: {fileID: 114310064776019222}
+  - component: {fileID: 114280435632750758}
+  - component: {fileID: 114837039152949368}
   m_Layer: 0
   m_Name: Post-it
   m_TagString: Untagged
@@ -64,7 +64,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4077295733793554}
-  - component: {fileID: 114428777820293414}
+  - component: {fileID: 114903519131913822}
   m_Layer: 0
   m_Name: Task
   m_TagString: Untagged
@@ -315,7 +315,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
---- !u!114 &114310064776019222
+--- !u!114 &114280435632750758
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -323,10 +323,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 1176137326965938}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 166356b4f9da9b947ba866e9afd4c5bd, type: 3}
+  m_Script: {fileID: 11500000, guid: df2f814c574e42b40bed82aca0422ded, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  highlightColor: {r: 1, g: 0, b: 0.55862045, a: 0}
+  m_FloatForce: 0.8
+  m_SlidePower: 0.2
+  m_PuffPower: 0.05
+  m_PuffDelayMin: 0.2
+  m_PuffDelayMax: 0.3
 --- !u!114 &114313187621126270
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -384,21 +388,7 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
---- !u!114 &114428777820293414
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1419554109275424}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bbc9f0a51bc06a24bb7e33b6af910faf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  postIt: {fileID: 114310064776019222}
-  startState: 0
-  description: '[Een taak]'
---- !u!114 &114716971014086000
+--- !u!114 &114837039152949368
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -406,14 +396,24 @@ MonoBehaviour:
   m_GameObject: {fileID: 1176137326965938}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b599d36aa1681cb4dbd0b84f791443ad, type: 3}
+  m_Script: {fileID: 11500000, guid: 37f34126bb37ccd41ab24b13f5f57067, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_FloatForce: 0.8
-  m_SlidePower: 0.2
-  m_PuffPower: 0.01
-  m_PuffDelayMin: 0.2
-  m_PuffDelayMax: 0.3
+  highlightColor: {r: 1, g: 0.93103456, b: 0, a: 0}
+--- !u!114 &114903519131913822
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1419554109275424}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c0510cb6e363044fb0300e18cbf3272, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  postIt: {fileID: 114837039152949368}
+  startState: 0
+  description: '[Taak]'
 --- !u!114 &114929542957421732
 MonoBehaviour:
   m_ObjectHideFlags: 1

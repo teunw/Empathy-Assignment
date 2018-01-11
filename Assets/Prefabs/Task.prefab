@@ -19,7 +19,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4726568292003062}
-  - component: {fileID: 114555842473973248}
+  - component: {fileID: 114767832092442040}
   m_Layer: 0
   m_Name: Task
   m_TagString: Untagged
@@ -40,7 +40,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &114555842473973248
+--- !u!114 &114767832092442040
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -48,9 +48,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 1461785796594322}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bbc9f0a51bc06a24bb7e33b6af910faf, type: 3}
+  m_Script: {fileID: 11500000, guid: 8c0510cb6e363044fb0300e18cbf3272, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   postIt: {fileID: 0}
   startState: 0
-  description: '[Een taak]'
+  description: 
