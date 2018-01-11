@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using DefaultNamespace;
 using UnityEngine;
+using UnityEngine.Events;
 using VRTK;
 
 public class Teapot : MonoBehaviour
@@ -10,6 +11,7 @@ public class Teapot : MonoBehaviour
     public float HotTime = 20f;
     public float DropTime = 2f;
     public bool ShouldBeDropped = true;
+    public UnityEvent OnDropTea;
 
     // Use this for initialization
     void Start()
@@ -36,6 +38,7 @@ public class Teapot : MonoBehaviour
         var obj = this.GetComponent<VRTK_InteractableObject>();
         obj.ForceStopInteracting();
         obj.isGrabbable = false;
+        this.OnDropTea.Invoke();
     }
 
     public IEnumerator SetBoilingEnum()
