@@ -2608,7 +2608,7 @@ GameObject:
   - component: {fileID: 4756447233913110}
   - component: {fileID: 95895844898208592}
   m_Layer: 0
-  m_Name: hallway 1 1
+  m_Name: hallway
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
