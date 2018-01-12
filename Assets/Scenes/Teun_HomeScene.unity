@@ -494,6 +494,7 @@ GameObject:
   - component: {fileID: 88063864}
   - component: {fileID: 88063867}
   - component: {fileID: 88063868}
+  - component: {fileID: 88063869}
   m_Layer: 0
   m_Name: LeftController
   m_TagString: Untagged
@@ -598,7 +599,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 88063862}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7fc65878c7102524bb8c2bcfbefff497, type: 3}
   m_Name: 
@@ -639,7 +640,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enableTeleport: 1
   targetListPolicy: {fileID: 574446759}
-  pointerRenderer: {fileID: 88063867}
+  pointerRenderer: {fileID: 88063869}
   activationButton: 10
   holdButtonToActivate: 1
   activateOnEnable: 0
@@ -653,6 +654,44 @@ MonoBehaviour:
   controller: {fileID: 0}
   interactUse: {fileID: 0}
   customOrigin: {fileID: 0}
+--- !u!114 &88063869
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 88063862}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd904f4ca6767424eaf8e050bc174741, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playareaCursor: {fileID: 0}
+  directionIndicator: {fileID: 0}
+  customRaycast: {fileID: 0}
+  layersToIgnore:
+    serializedVersion: 2
+    m_Bits: 4
+  pointerOriginSmoothingSettings:
+    smoothsPosition: 0
+    maxAllowedPerFrameDistanceDifference: 0.003
+    smoothsRotation: 0
+    maxAllowedPerFrameAngleDifference: 1.5
+  validCollisionColor: {r: 0, g: 1, b: 0, a: 1}
+  invalidCollisionColor: {r: 1, g: 0, b: 0, a: 1}
+  tracerVisibility: 0
+  cursorVisibility: 0
+  maximumLength: {x: 10, y: Infinity}
+  tracerDensity: 10
+  cursorRadius: 0.5
+  heightLimitAngle: 100
+  curveOffset: 1
+  rescaleTracer: 0
+  cursorMatchTargetRotation: 0
+  collisionCheckFrequency: 0
+  customTracer: {fileID: 0}
+  customCursor: {fileID: 0}
+  validLocationObject: {fileID: 0}
+  invalidLocationObject: {fileID: 0}
 --- !u!1001 &98662462
 Prefab:
   m_ObjectHideFlags: 0
@@ -1148,7 +1187,7 @@ Prefab:
     - target: {fileID: 224000012623161658, guid: d46cf6b1ad9d84a48ae7548a2a6b41b3,
         type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: 885
+      value: 889
       objectReference: {fileID: 0}
     - target: {fileID: 224000012623161658, guid: d46cf6b1ad9d84a48ae7548a2a6b41b3,
         type: 2}
@@ -1536,7 +1575,12 @@ Prefab:
       propertyPath: validObjectListPolicy
       value: 
       objectReference: {fileID: 1013498750}
-    m_RemovedComponents: []
+    - target: {fileID: 1487470166173886, guid: 4f814bb835faed94d8773096ab38d244, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 64142047226695358, guid: 4f814bb835faed94d8773096ab38d244, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 4f814bb835faed94d8773096ab38d244, type: 2}
   m_IsPrefabParent: 0
 --- !u!82 &120483135 stripped
@@ -3069,6 +3113,7 @@ GameObject:
   - component: {fileID: 422462005}
   - component: {fileID: 422462008}
   - component: {fileID: 422462009}
+  - component: {fileID: 422462010}
   m_Layer: 0
   m_Name: RightController
   m_TagString: Untagged
@@ -3173,7 +3218,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 422462003}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7fc65878c7102524bb8c2bcfbefff497, type: 3}
   m_Name: 
@@ -3214,7 +3259,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enableTeleport: 1
   targetListPolicy: {fileID: 574446759}
-  pointerRenderer: {fileID: 422462008}
+  pointerRenderer: {fileID: 422462010}
   activationButton: 10
   holdButtonToActivate: 1
   activateOnEnable: 0
@@ -3228,6 +3273,44 @@ MonoBehaviour:
   controller: {fileID: 0}
   interactUse: {fileID: 0}
   customOrigin: {fileID: 0}
+--- !u!114 &422462010
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 422462003}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd904f4ca6767424eaf8e050bc174741, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playareaCursor: {fileID: 0}
+  directionIndicator: {fileID: 0}
+  customRaycast: {fileID: 0}
+  layersToIgnore:
+    serializedVersion: 2
+    m_Bits: 4
+  pointerOriginSmoothingSettings:
+    smoothsPosition: 0
+    maxAllowedPerFrameDistanceDifference: 0.003
+    smoothsRotation: 0
+    maxAllowedPerFrameAngleDifference: 1.5
+  validCollisionColor: {r: 0, g: 1, b: 0, a: 1}
+  invalidCollisionColor: {r: 1, g: 0, b: 0, a: 1}
+  tracerVisibility: 0
+  cursorVisibility: 0
+  maximumLength: {x: 10, y: Infinity}
+  tracerDensity: 10
+  cursorRadius: 0.5
+  heightLimitAngle: 100
+  curveOffset: 1
+  rescaleTracer: 0
+  cursorMatchTargetRotation: 0
+  collisionCheckFrequency: 0
+  customTracer: {fileID: 0}
+  customCursor: {fileID: 0}
+  validLocationObject: {fileID: 0}
+  invalidLocationObject: {fileID: 0}
 --- !u!1 &446754630
 GameObject:
   m_ObjectHideFlags: 0
@@ -4606,6 +4689,18 @@ GameObject:
   m_PrefabParentObject: {fileID: 1487470166173886, guid: 4f814bb835faed94d8773096ab38d244,
     type: 2}
   m_PrefabInternal: {fileID: 120483134}
+--- !u!65 &672961297
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 672961291}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.040000003, y: 0.05304667, z: 0.040000018}
+  m_Center: {x: 7.47313e-17, y: -0.01402345, z: 0.000000048010847}
 --- !u!114 &672961300
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5605,7 +5700,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4902250572631756, guid: 47bd2a7c438f5a54b8acbaea78defb21, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 0.5488177
+      value: 0.438
       objectReference: {fileID: 0}
     - target: {fileID: 4902250572631756, guid: 47bd2a7c438f5a54b8acbaea78defb21, type: 2}
       propertyPath: m_LocalPosition.z
@@ -5630,6 +5725,18 @@ Prefab:
     - target: {fileID: 4902250572631756, guid: 47bd2a7c438f5a54b8acbaea78defb21, type: 2}
       propertyPath: m_RootOrder
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4902250572631756, guid: 47bd2a7c438f5a54b8acbaea78defb21, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 1.1163924
+      objectReference: {fileID: 0}
+    - target: {fileID: 4902250572631756, guid: 47bd2a7c438f5a54b8acbaea78defb21, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 1.1163924
+      objectReference: {fileID: 0}
+    - target: {fileID: 4902250572631756, guid: 47bd2a7c438f5a54b8acbaea78defb21, type: 2}
+      propertyPath: m_LocalScale.z
+      value: 1.1163924
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 47bd2a7c438f5a54b8acbaea78defb21, type: 2}
@@ -8776,7 +8883,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1390037566}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.676, y: 1.409, z: -0.511}
+  m_LocalPosition: {x: -0.719, y: 1.309, z: -0.337}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1208078724}
@@ -9358,7 +9465,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1483276513}
   m_LocalRotation: {x: -0, y: -0, z: -0.6616846, w: 0.7497823}
-  m_LocalPosition: {x: -1.34, y: 1.189, z: -0.556}
+  m_LocalPosition: {x: -1.229, y: 1.103, z: -0.436}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1491217018}
@@ -9678,7 +9785,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1502474349}
   m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: -0.953, y: 1.369, z: -0.639}
+  m_LocalPosition: {x: -0.996, y: 1.2689999, z: -0.46500003}
   m_LocalScale: {x: 5, y: 5, z: 8}
   m_Children:
   - {fileID: 1858980339}
@@ -12750,7 +12857,7 @@ Prefab:
     - target: {fileID: 114903519131913822, guid: 539eb1fdde17e2f40b00ca5f21ee3076,
         type: 2}
       propertyPath: description
-      value: Sleutel wegleggen.
+      value: Leg de sleutel in de schaal bij de deur.
       objectReference: {fileID: 0}
     - target: {fileID: 114903519131913822, guid: 539eb1fdde17e2f40b00ca5f21ee3076,
         type: 2}
