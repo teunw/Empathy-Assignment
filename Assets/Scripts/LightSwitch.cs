@@ -7,7 +7,7 @@ using VRTK.UnityEventHelper;
 public class LightSwitch : MonoBehaviour {
 
     public Light[] lights;
-    private bool isOn = false;
+    private bool isOn = true;
 
     private VRTK_Button_UnityEvents buttonEvents;
 
