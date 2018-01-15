@@ -4,8 +4,8 @@ using VRTK;
 [RequireComponent(typeof(VRTK_InteractableObject))]
 public class KeyController : MonoBehaviour {
 
-    [Tooltip("The new location the key should move to when out of sight.")]
-    public Transform newLocation;
+    [Tooltip("The possible new locations the key should move to when out of sight.")]
+    public Transform[] newLocations;
 
 	private VRTK_InteractableObject interactableObject;
 
@@ -40,6 +40,14 @@ public class KeyController : MonoBehaviour {
 		enabled = false;
 	}
 
+    private void Update()
+    {
+        if (Camera.main != null && shouldDissapear && !VisibilityCheck.IsVisible(Camera.main, gameObject, true, false))
+        {
+            Dissapear();
+        }
+    }
+
     public void OnGrab()
     {
 		if (dissapearCounter < 1) 
@@ -54,16 +62,22 @@ public class KeyController : MonoBehaviour {
 		enabled = false;
 		shouldDissapear = false;
 		interactableObject.ForceStopInteracting ();
-		transform.position = newLocation.position;
-		transform.rotation = newLocation.rotation;
+        Transform location = GetRandomLocation();
+		transform.position = location.position;
+		transform.rotation = location.rotation;
 		dissapearCounter++;
 	}
 
-    private void Update()
+    public Transform GetRandomLocation()
     {
-        if (Camera.main != null && shouldDissapear && !VisibilityCheck.IsVisible(Camera.main, gameObject, true, false))
+        if (newLocations.Length < 1)
         {
-			Dissapear ();
+            Debug.LogError("There should be atleast 1 possible location");
+            return null;
         }
+
+        if (newLocations.Length == 1) return newLocations[0];
+
+        return newLocations[Random.Range(0, newLocations.Length - 1)];
     }
 }

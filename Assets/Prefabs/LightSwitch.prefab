@@ -11,6 +11,23 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 1793689752635732}
   m_IsPrefabParent: 1
+--- !u!1 &1083834568261350
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4250592867443550}
+  - component: {fileID: 114605562357529828}
+  - component: {fileID: 114148752532498088}
+  m_Layer: 0
+  m_Name: policylist
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &1150036445150854
 GameObject:
   m_ObjectHideFlags: 0
@@ -24,7 +41,7 @@ GameObject:
   - component: {fileID: 114840703457502616}
   - component: {fileID: 114039650746684182}
   - component: {fileID: 114398715525867734}
-  - component: {fileID: 114015832939116844}
+  - component: {fileID: 114007172370061522}
   m_Layer: 0
   m_Name: ButtonWall2AutoSetup
   m_TagString: Untagged
@@ -66,6 +83,19 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!4 &4250592867443550
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1083834568261350}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4995788334129668}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4284735337375424
 Transform:
   m_ObjectHideFlags: 1
@@ -73,8 +103,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1150036445150854}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.5961668, y: 0.02140307, z: 0}
-  m_LocalScale: {x: 1.9289373, y: 0.6669359, z: 0.61926556}
+  m_LocalPosition: {x: 0.362, y: 0.02140307, z: 0}
+  m_LocalScale: {x: 0.21647213, y: 1.082361, z: 1.082361}
   m_Children: []
   m_Father: {fileID: 4995788334129668}
   m_RootOrder: 1
@@ -87,7 +117,7 @@ Transform:
   m_GameObject: {fileID: 1259797291275368}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.24752003, y: 1.2376001, z: 1.2376001}
   m_Children: []
   m_Father: {fileID: 4995788334129668}
   m_RootOrder: 0
@@ -98,12 +128,13 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1793689752635732}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -4.344, y: 1.743, z: -0.575}
+  m_LocalScale: {x: 0.1359638, y: 0.13596374, z: 0.13596374}
   m_Children:
   - {fileID: 4771065401018060}
   - {fileID: 4284735337375424}
+  - {fileID: 4250592867443550}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -121,7 +152,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: b43e5571a9fe23946bf3070cdfceb1b0, type: 2}
+  - {fileID: 2100000, guid: 7d8a3213b7d1b864c98397b219eb8cbf, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -155,7 +186,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: fa756b232992781448908e45ad28eece, type: 2}
+  - {fileID: 2100000, guid: c7a5dcd059ca0e1478a45c76a1c976ed, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -216,7 +247,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &114015832939116844
+--- !u!114 &114007172370061522
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -224,7 +255,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1150036445150854}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9f4f0edf8bfae354fba9827359934240, type: 3}
+  m_Script: {fileID: 11500000, guid: 30599a6d450c1214c94afba55c248482, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   lights:
@@ -260,6 +291,21 @@ MonoBehaviour:
   useOverrideButton: 0
   allowedUseControllers: 0
   usingState: 0
+--- !u!114 &114148752532498088
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1083834568261350}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ed2aa1a29b92ca4f84a26a5f6e9218b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  operation: 0
+  checkType: 1
+  identifiers:
+  - TeleportIgnore
 --- !u!114 &114398715525867734
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -273,7 +319,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   OnPushed:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: VRTK.UnityEventHelper.VRTK_Button_UnityEvents+Button3DEvent, Assembly-CSharp,
       Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
   OnReleased:
@@ -281,6 +338,21 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: VRTK.UnityEventHelper.VRTK_Button_UnityEvents+Button3DEvent, Assembly-CSharp,
       Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+--- !u!114 &114605562357529828
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1083834568261350}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ed2aa1a29b92ca4f84a26a5f6e9218b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  operation: 1
+  checkType: 1
+  identifiers:
+  - PlayerCanTeleport
 --- !u!114 &114840703457502616
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -301,7 +373,7 @@ MonoBehaviour:
   interactWithoutGrab: 1
   connectedTo: {fileID: 1259797291275368}
   direction: 0
-  activationDistance: 0
+  activationDistance: 0.016792083
   buttonStrength: 5
   events:
     OnPush:
