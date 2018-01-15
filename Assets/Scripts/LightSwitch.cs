@@ -14,14 +14,22 @@ public class LightSwitch : MonoBehaviour {
     // Initialize
     private void Start()
     {
-        buttonEvents = GetComponent<VRTK_Button_UnityEvents>();
-        buttonEvents.OnPushed.AddListener(handlePush);
-
         // Lights
         for (int i = 0; i < lights.Length; i++)
         {
             lights[i].enabled = isOn;
         }
+    }
+
+    private void OnEnable()
+    {
+        buttonEvents = GetComponent<VRTK_Button_UnityEvents>();
+        buttonEvents.OnPushed.AddListener(handlePush);
+    }
+
+    private void OnDisable()
+    {
+        buttonEvents.OnPushed.RemoveListener(handlePush);
     }
 
     private void handlePush(object sender, Control3DEventArgs e)
