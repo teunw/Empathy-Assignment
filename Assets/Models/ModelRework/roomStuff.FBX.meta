@@ -1,0 +1,1072 @@
+fileFormatVersion: 2
+guid: 11299d3ef695ab744a8b0db62fe7293c
+timeCreated: 1515757424
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: 07 Picture
+    100002: 3dSolid
+    100004: 3dSolid 1
+    100006: 3dSolid 10
+    100008: 3dSolid 11
+    100010: 3dSolid 12
+    100012: 3dSolid 13
+    100014: 3dSolid 14
+    100016: 3dSolid 15
+    100018: 3dSolid 2
+    100020: 3dSolid 3
+    100022: 3dSolid 4
+    100024: 3dSolid 5
+    100026: 3dSolid 6
+    100028: 3dSolid 7
+    100030: 3dSolid 8
+    100032: 3dSolid 9
+    100034: 3dSolid001
+    100036: 3dSolid002
+    100038: 3dSolid003
+    100040: 606 Cabine
+    100042: Back
+    100044: beam1
+    100046: beam2
+    100048: beam3
+    100050: bed
+    100052: behind_drawer001
+    100054: Body_Courtyard_Template002_Window_reference_smd_mesh_0
+    100056: Body_Courtyard_Template002_Window_reference_smd_mesh_001
+    100058: BOOK14
+    100060: Box001
+    100062: Box002
+    100064: Box003
+    100066: Box004
+    100068: Box005
+    100070: Box006
+    100072: Box007
+    100074: Box008
+    100076: Box009
+    100078: Box010
+    100080: Box012
+    100082: Box013
+    100084: Box020
+    100086: Box021
+    100088: Box022
+    100090: Box024
+    100092: Box025
+    100094: Box026
+    100096: Box027
+    100098: Box029
+    100100: Box030
+    100102: Box031
+    100104: Box032
+    100106: Box033
+    100108: Box034
+    100110: Box035
+    100112: caps
+    100114: ChamferBox001
+    100116: ChamferBox002
+    100118: ChamferBox004
+    100120: ChamferBox005
+    100122: ChamferBox006
+    100124: ChamferBox007
+    100126: ChamferBox008
+    100128: ChamferBox04
+    100130: closet
+    100132: CoffeeTable
+    100134: Cylinder019
+    100136: Cylinder020
+    100138: Cylinder021
+    100140: Cylinder022
+    100142: Cylinder13
+    100144: Door_Door1
+    100146: Door_Frame
+    100148: doorHandle
+    100150: doorHandle2
+    100152: drawer
+    100154: Flowerpot
+    100156: Frame
+    100158: frame2
+    100160: Glass
+    100162: Group01
+    100164: legs
+    100166: Line30
+    100168: Line31
+    100170: Line32
+    100172: Line33
+    100174: Line34
+    100176: Line35
+    100178: Line37
+    100180: Line41
+    100182: Line42
+    100184: lun12
+    100186: lun13
+    100188: lun14
+    100190: lun15
+    100192: Mesh01
+    100194: Mesh02
+    100196: Mesh03
+    100198: Mesh04
+    100200: Mesh05
+    100202: Mesh06
+    100204: Mesh07
+    100206: Mesh08
+    100208: Mesh09
+    100210: nightTable
+    100212: pages
+    100214: painting
+    100216: Photo_Fram
+    100218: Photos
+    100220: Pillow
+    100222: Pillow001
+    100224: Pillow002
+    100226: Pillow1
+    100228: Pillow2
+    100230: polySurface105
+    100232: polySurface106
+    100234: Pot
+    100236: Rectangle142
+    100238: Rectangle143
+    100240: Rectangle148
+    100242: Rectangle149
+    100244: Rectangle150
+    100246: Rectangle151
+    100248: Rectangle152
+    100250: Rectangle153
+    100252: Rectangle154
+    100254: Rectangle155
+    100256: Rectangle156
+    100258: Rectangle157
+    100260: Rectangle158
+    100262: Rectangle159
+    100264: Rectangle160
+    100266: Rectangle161
+    100268: Rectangle162
+    100270: Rectangle163
+    100272: Rectangle164
+    100274: Rectangle165
+    100276: Rectangle166
+    100278: Rectangle167
+    100280: Rectangle168
+    100282: Rectangle169
+    100284: Rectangle170
+    100286: Rectangle173
+    100288: Rectangle174
+    100290: Rectangle175
+    100292: Rectangle176
+    100294: Rectangle177
+    100296: Rectangle178
+    100298: Rectangle179
+    100300: Rectangle180
+    100302: Rectangle182
+    100304: Rectangle183
+    100306: //RootNode
+    100308: Sheet1
+    100310: Sheet2
+    100312: Sofa
+    100314: sofa
+    100316: Table
+    100318: Televizyon
+    100320: "Televizyon_Masas\u0131"
+    100322: Text001
+    100324: Wall001
+    100326: "\u043D\u043E\u0436\u043A\u0430_\u0441\u0442\u043E\u043B_001"
+    100328: "\u043D\u043E\u0436\u043A\u0430_\u0441\u0442\u043E\u043B_002"
+    100330: "\u043D\u043E\u0436\u043A\u0430_\u0441\u0442\u043E\u043B_003"
+    100332: "\u043D\u043E\u0436\u043A\u0430_\u0441\u0442\u043E\u043B_004"
+    400000: 07 Picture
+    400002: 3dSolid
+    400004: 3dSolid 1
+    400006: 3dSolid 10
+    400008: 3dSolid 11
+    400010: 3dSolid 12
+    400012: 3dSolid 13
+    400014: 3dSolid 14
+    400016: 3dSolid 15
+    400018: 3dSolid 2
+    400020: 3dSolid 3
+    400022: 3dSolid 4
+    400024: 3dSolid 5
+    400026: 3dSolid 6
+    400028: 3dSolid 7
+    400030: 3dSolid 8
+    400032: 3dSolid 9
+    400034: 3dSolid001
+    400036: 3dSolid002
+    400038: 3dSolid003
+    400040: 606 Cabine
+    400042: Back
+    400044: beam1
+    400046: beam2
+    400048: beam3
+    400050: bed
+    400052: behind_drawer001
+    400054: Body_Courtyard_Template002_Window_reference_smd_mesh_0
+    400056: Body_Courtyard_Template002_Window_reference_smd_mesh_001
+    400058: BOOK14
+    400060: Box001
+    400062: Box002
+    400064: Box003
+    400066: Box004
+    400068: Box005
+    400070: Box006
+    400072: Box007
+    400074: Box008
+    400076: Box009
+    400078: Box010
+    400080: Box012
+    400082: Box013
+    400084: Box020
+    400086: Box021
+    400088: Box022
+    400090: Box024
+    400092: Box025
+    400094: Box026
+    400096: Box027
+    400098: Box029
+    400100: Box030
+    400102: Box031
+    400104: Box032
+    400106: Box033
+    400108: Box034
+    400110: Box035
+    400112: caps
+    400114: ChamferBox001
+    400116: ChamferBox002
+    400118: ChamferBox004
+    400120: ChamferBox005
+    400122: ChamferBox006
+    400124: ChamferBox007
+    400126: ChamferBox008
+    400128: ChamferBox04
+    400130: closet
+    400132: CoffeeTable
+    400134: Cylinder019
+    400136: Cylinder020
+    400138: Cylinder021
+    400140: Cylinder022
+    400142: Cylinder13
+    400144: Door_Door1
+    400146: Door_Frame
+    400148: doorHandle
+    400150: doorHandle2
+    400152: drawer
+    400154: Flowerpot
+    400156: Frame
+    400158: frame2
+    400160: Glass
+    400162: Group01
+    400164: legs
+    400166: Line30
+    400168: Line31
+    400170: Line32
+    400172: Line33
+    400174: Line34
+    400176: Line35
+    400178: Line37
+    400180: Line41
+    400182: Line42
+    400184: lun12
+    400186: lun13
+    400188: lun14
+    400190: lun15
+    400192: Mesh01
+    400194: Mesh02
+    400196: Mesh03
+    400198: Mesh04
+    400200: Mesh05
+    400202: Mesh06
+    400204: Mesh07
+    400206: Mesh08
+    400208: Mesh09
+    400210: nightTable
+    400212: pages
+    400214: painting
+    400216: Photo_Fram
+    400218: Photos
+    400220: Pillow
+    400222: Pillow001
+    400224: Pillow002
+    400226: Pillow1
+    400228: Pillow2
+    400230: polySurface105
+    400232: polySurface106
+    400234: Pot
+    400236: Rectangle142
+    400238: Rectangle143
+    400240: Rectangle148
+    400242: Rectangle149
+    400244: Rectangle150
+    400246: Rectangle151
+    400248: Rectangle152
+    400250: Rectangle153
+    400252: Rectangle154
+    400254: Rectangle155
+    400256: Rectangle156
+    400258: Rectangle157
+    400260: Rectangle158
+    400262: Rectangle159
+    400264: Rectangle160
+    400266: Rectangle161
+    400268: Rectangle162
+    400270: Rectangle163
+    400272: Rectangle164
+    400274: Rectangle165
+    400276: Rectangle166
+    400278: Rectangle167
+    400280: Rectangle168
+    400282: Rectangle169
+    400284: Rectangle170
+    400286: Rectangle173
+    400288: Rectangle174
+    400290: Rectangle175
+    400292: Rectangle176
+    400294: Rectangle177
+    400296: Rectangle178
+    400298: Rectangle179
+    400300: Rectangle180
+    400302: Rectangle182
+    400304: Rectangle183
+    400306: //RootNode
+    400308: Sheet1
+    400310: Sheet2
+    400312: Sofa
+    400314: sofa
+    400316: Table
+    400318: Televizyon
+    400320: "Televizyon_Masas\u0131"
+    400322: Text001
+    400324: Wall001
+    400326: "\u043D\u043E\u0436\u043A\u0430_\u0441\u0442\u043E\u043B_001"
+    400328: "\u043D\u043E\u0436\u043A\u0430_\u0441\u0442\u043E\u043B_002"
+    400330: "\u043D\u043E\u0436\u043A\u0430_\u0441\u0442\u043E\u043B_003"
+    400332: "\u043D\u043E\u0436\u043A\u0430_\u0441\u0442\u043E\u043B_004"
+    2100000: No Name
+    2100002: Door_Color
+    2100004: default
+    2100006: wood_mebel
+    2100008: Material__229
+    2100010: 20 - Default
+    2100012: 15 - Default
+    2100014: 01 - Default01
+    2100016: st wood
+    2100018: st tile
+    2100020: st gold
+    2100022: standart metal
+    2100024: "\u5E8A\u4F53"
+    2100026: "\u5E8A\u57AB"
+    2100028: "\u5E8A\u4F532"
+    2100030: "\u5E8A\u4F533"
+    2100032: 13 - Default
+    2100034: Gold
+    2100036: 'Material #393'
+    2100038: blinn13
+    2100040: 'Material #25'
+    2100042: 'Material #26'
+    2100044: 'Material #0'
+    2100046: 05 - Default
+    2100048: 'Material #394'
+    2100050: Glaze
+    2100052: Archinteriors_11_07_04
+    2100054: 'Material #59 Slot #1'
+    2100056: 'Material #59 Slot #2'
+    2100058: PLASTIC__PVC__Opaque Black
+    2100060: PLASTIC__PVC__Opaque White
+    2100062: PLASTIC__PVC Foam Board__White
+    2100064: 'Material #60'
+    2100066: FRONT
+    2100068: WHITE PLASTIC
+    2100070: Ceramiks 2
+    2100072: Mat.6
+    2100074: w  3_
+    2100076: Mat
+    2100078: 10 - Default
+    2100080: 04 - Default
+    2100082: 03 - Default
+    2100084: 14 - Default
+    2100086: 09 - Default
+    2100088: 02 - Default
+    2100090: 08 - Default
+    2100092: 'Material #48'
+    2100094: 'Material #50'
+    2100096: 'Material #2'
+    2300000: 07 Picture
+    2300002: 3dSolid
+    2300004: 3dSolid 1
+    2300006: 3dSolid 10
+    2300008: 3dSolid 11
+    2300010: 3dSolid 12
+    2300012: 3dSolid 13
+    2300014: 3dSolid 14
+    2300016: 3dSolid 15
+    2300018: 3dSolid 2
+    2300020: 3dSolid 3
+    2300022: 3dSolid 4
+    2300024: 3dSolid 5
+    2300026: 3dSolid 6
+    2300028: 3dSolid 7
+    2300030: 3dSolid 8
+    2300032: 3dSolid 9
+    2300034: 3dSolid001
+    2300036: 3dSolid002
+    2300038: 3dSolid003
+    2300040: 606 Cabine
+    2300042: Back
+    2300044: beam1
+    2300046: beam2
+    2300048: beam3
+    2300050: behind_drawer001
+    2300052: Body_Courtyard_Template002_Window_reference_smd_mesh_0
+    2300054: Body_Courtyard_Template002_Window_reference_smd_mesh_001
+    2300056: BOOK14
+    2300058: Box001
+    2300060: Box002
+    2300062: Box003
+    2300064: Box004
+    2300066: Box005
+    2300068: Box006
+    2300070: Box007
+    2300072: Box008
+    2300074: Box009
+    2300076: Box010
+    2300078: Box012
+    2300080: Box013
+    2300082: Box020
+    2300084: Box021
+    2300086: Box022
+    2300088: Box024
+    2300090: Box025
+    2300092: Box026
+    2300094: Box027
+    2300096: Box030
+    2300098: Box031
+    2300100: Box032
+    2300102: Box033
+    2300104: Box034
+    2300106: Box035
+    2300108: caps
+    2300110: ChamferBox001
+    2300112: ChamferBox002
+    2300114: ChamferBox004
+    2300116: ChamferBox005
+    2300118: ChamferBox006
+    2300120: ChamferBox007
+    2300122: ChamferBox008
+    2300124: ChamferBox04
+    2300126: closet
+    2300128: Cylinder019
+    2300130: Cylinder020
+    2300132: Cylinder021
+    2300134: Cylinder022
+    2300136: Cylinder13
+    2300138: Door_Door1
+    2300140: Door_Frame
+    2300142: doorHandle
+    2300144: doorHandle2
+    2300146: Flowerpot
+    2300148: Frame
+    2300150: frame2
+    2300152: Glass
+    2300154: legs
+    2300156: Line30
+    2300158: Line31
+    2300160: Line32
+    2300162: Line33
+    2300164: Line34
+    2300166: Line35
+    2300168: Line37
+    2300170: Line41
+    2300172: Line42
+    2300174: Mesh01
+    2300176: Mesh02
+    2300178: Mesh03
+    2300180: Mesh04
+    2300182: Mesh05
+    2300184: Mesh06
+    2300186: Mesh07
+    2300188: Mesh08
+    2300190: Mesh09
+    2300192: pages
+    2300194: painting
+    2300196: Pillow
+    2300198: Pillow001
+    2300200: Pillow002
+    2300202: Pillow1
+    2300204: Pillow2
+    2300206: polySurface105
+    2300208: polySurface106
+    2300210: Pot
+    2300212: Rectangle142
+    2300214: Rectangle143
+    2300216: Rectangle148
+    2300218: Rectangle149
+    2300220: Rectangle150
+    2300222: Rectangle151
+    2300224: Rectangle152
+    2300226: Rectangle153
+    2300228: Rectangle154
+    2300230: Rectangle155
+    2300232: Rectangle156
+    2300234: Rectangle157
+    2300236: Rectangle158
+    2300238: Rectangle159
+    2300240: Rectangle160
+    2300242: Rectangle161
+    2300244: Rectangle162
+    2300246: Rectangle163
+    2300248: Rectangle164
+    2300250: Rectangle165
+    2300252: Rectangle166
+    2300254: Rectangle167
+    2300256: Rectangle168
+    2300258: Rectangle169
+    2300260: Rectangle170
+    2300262: Rectangle173
+    2300264: Rectangle174
+    2300266: Rectangle175
+    2300268: Rectangle176
+    2300270: Rectangle177
+    2300272: Rectangle178
+    2300274: Rectangle179
+    2300276: Rectangle180
+    2300278: Rectangle182
+    2300280: Rectangle183
+    2300282: Sheet1
+    2300284: Sheet2
+    2300286: Sofa
+    2300288: Text001
+    2300290: Wall001
+    2300292: "\u043D\u043E\u0436\u043A\u0430_\u0441\u0442\u043E\u043B_001"
+    2300294: "\u043D\u043E\u0436\u043A\u0430_\u0441\u0442\u043E\u043B_002"
+    2300296: "\u043D\u043E\u0436\u043A\u0430_\u0441\u0442\u043E\u043B_003"
+    2300298: "\u043D\u043E\u0436\u043A\u0430_\u0441\u0442\u043E\u043B_004"
+    3300000: 07 Picture
+    3300002: 3dSolid
+    3300004: 3dSolid 1
+    3300006: 3dSolid 10
+    3300008: 3dSolid 11
+    3300010: 3dSolid 12
+    3300012: 3dSolid 13
+    3300014: 3dSolid 14
+    3300016: 3dSolid 15
+    3300018: 3dSolid 2
+    3300020: 3dSolid 3
+    3300022: 3dSolid 4
+    3300024: 3dSolid 5
+    3300026: 3dSolid 6
+    3300028: 3dSolid 7
+    3300030: 3dSolid 8
+    3300032: 3dSolid 9
+    3300034: 3dSolid001
+    3300036: 3dSolid002
+    3300038: 3dSolid003
+    3300040: 606 Cabine
+    3300042: Back
+    3300044: beam1
+    3300046: beam2
+    3300048: beam3
+    3300050: behind_drawer001
+    3300052: Body_Courtyard_Template002_Window_reference_smd_mesh_0
+    3300054: Body_Courtyard_Template002_Window_reference_smd_mesh_001
+    3300056: BOOK14
+    3300058: Box001
+    3300060: Box002
+    3300062: Box003
+    3300064: Box004
+    3300066: Box005
+    3300068: Box006
+    3300070: Box007
+    3300072: Box008
+    3300074: Box009
+    3300076: Box010
+    3300078: Box012
+    3300080: Box013
+    3300082: Box020
+    3300084: Box021
+    3300086: Box022
+    3300088: Box024
+    3300090: Box025
+    3300092: Box026
+    3300094: Box027
+    3300096: Box030
+    3300098: Box031
+    3300100: Box032
+    3300102: Box033
+    3300104: Box034
+    3300106: Box035
+    3300108: caps
+    3300110: ChamferBox001
+    3300112: ChamferBox002
+    3300114: ChamferBox004
+    3300116: ChamferBox005
+    3300118: ChamferBox006
+    3300120: ChamferBox007
+    3300122: ChamferBox008
+    3300124: ChamferBox04
+    3300126: closet
+    3300128: Cylinder019
+    3300130: Cylinder020
+    3300132: Cylinder021
+    3300134: Cylinder022
+    3300136: Cylinder13
+    3300138: Door_Door1
+    3300140: Door_Frame
+    3300142: doorHandle
+    3300144: doorHandle2
+    3300146: Flowerpot
+    3300148: Frame
+    3300150: frame2
+    3300152: Glass
+    3300154: legs
+    3300156: Line30
+    3300158: Line31
+    3300160: Line32
+    3300162: Line33
+    3300164: Line34
+    3300166: Line35
+    3300168: Line37
+    3300170: Line41
+    3300172: Line42
+    3300174: Mesh01
+    3300176: Mesh02
+    3300178: Mesh03
+    3300180: Mesh04
+    3300182: Mesh05
+    3300184: Mesh06
+    3300186: Mesh07
+    3300188: Mesh08
+    3300190: Mesh09
+    3300192: pages
+    3300194: painting
+    3300196: Pillow
+    3300198: Pillow001
+    3300200: Pillow002
+    3300202: Pillow1
+    3300204: Pillow2
+    3300206: polySurface105
+    3300208: polySurface106
+    3300210: Pot
+    3300212: Rectangle142
+    3300214: Rectangle143
+    3300216: Rectangle148
+    3300218: Rectangle149
+    3300220: Rectangle150
+    3300222: Rectangle151
+    3300224: Rectangle152
+    3300226: Rectangle153
+    3300228: Rectangle154
+    3300230: Rectangle155
+    3300232: Rectangle156
+    3300234: Rectangle157
+    3300236: Rectangle158
+    3300238: Rectangle159
+    3300240: Rectangle160
+    3300242: Rectangle161
+    3300244: Rectangle162
+    3300246: Rectangle163
+    3300248: Rectangle164
+    3300250: Rectangle165
+    3300252: Rectangle166
+    3300254: Rectangle167
+    3300256: Rectangle168
+    3300258: Rectangle169
+    3300260: Rectangle170
+    3300262: Rectangle173
+    3300264: Rectangle174
+    3300266: Rectangle175
+    3300268: Rectangle176
+    3300270: Rectangle177
+    3300272: Rectangle178
+    3300274: Rectangle179
+    3300276: Rectangle180
+    3300278: Rectangle182
+    3300280: Rectangle183
+    3300282: Sheet1
+    3300284: Sheet2
+    3300286: Sofa
+    3300288: Text001
+    3300290: Wall001
+    3300292: "\u043D\u043E\u0436\u043A\u0430_\u0441\u0442\u043E\u043B_001"
+    3300294: "\u043D\u043E\u0436\u043A\u0430_\u0441\u0442\u043E\u043B_002"
+    3300296: "\u043D\u043E\u0436\u043A\u0430_\u0441\u0442\u043E\u043B_003"
+    3300298: "\u043D\u043E\u0436\u043A\u0430_\u0441\u0442\u043E\u043B_004"
+    4300000: Wall001
+    4300002: Box025
+    4300004: Box024
+    4300006: Box022
+    4300008: Box021
+    4300010: Box020
+    4300012: Door_Frame
+    4300014: Door_Door1
+    4300016: doorHandle2
+    4300018: doorHandle
+    4300020: Body_Courtyard_Template002_Window_reference_smd_mesh_001
+    4300022: Body_Courtyard_Template002_Window_reference_smd_mesh_0
+    4300024: frame2
+    4300026: painting
+    4300028: closet
+    4300030: Line42
+    4300032: Line41
+    4300034: Line34
+    4300036: Line37
+    4300038: Line35
+    4300040: Line33
+    4300042: Line32
+    4300044: Line31
+    4300046: Line30
+    4300048: Cylinder019
+    4300050: Cylinder020
+    4300052: Cylinder021
+    4300054: Cylinder022
+    4300056: Rectangle142
+    4300058: Rectangle143
+    4300060: ChamferBox04
+    4300062: Rectangle148
+    4300064: Rectangle149
+    4300066: Rectangle150
+    4300068: Rectangle151
+    4300070: Rectangle152
+    4300072: Rectangle153
+    4300074: Rectangle154
+    4300076: Rectangle155
+    4300078: Rectangle156
+    4300080: Rectangle157
+    4300082: Cylinder13
+    4300084: Rectangle158
+    4300086: Rectangle159
+    4300088: Rectangle160
+    4300090: Rectangle161
+    4300092: Rectangle162
+    4300094: Rectangle163
+    4300096: Rectangle164
+    4300098: Rectangle165
+    4300100: Rectangle166
+    4300102: Rectangle167
+    4300104: Rectangle168
+    4300106: Rectangle169
+    4300108: Rectangle170
+    4300110: Rectangle173
+    4300112: Rectangle174
+    4300114: Rectangle175
+    4300116: Rectangle176
+    4300118: Rectangle177
+    4300120: Rectangle178
+    4300122: Rectangle179
+    4300124: Rectangle180
+    4300126: Rectangle182
+    4300128: Rectangle183
+    4300130: Sheet2
+    4300132: Sheet1
+    4300134: Pillow
+    4300136: Pillow001
+    4300138: Pillow002
+    4300140: 606 Cabine
+    4300142: ChamferBox004
+    4300144: "\u043D\u043E\u0436\u043A\u0430_\u0441\u0442\u043E\u043B_004"
+    4300146: ChamferBox007
+    4300148: ChamferBox006
+    4300150: "\u043D\u043E\u0436\u043A\u0430_\u0441\u0442\u043E\u043B_003"
+    4300152: ChamferBox005
+    4300154: "\u043D\u043E\u0436\u043A\u0430_\u0441\u0442\u043E\u043B_001"
+    4300156: "\u043D\u043E\u0436\u043A\u0430_\u0441\u0442\u043E\u043B_002"
+    4300158: ChamferBox008
+    4300160: polySurface105
+    4300162: polySurface106
+    4300164: legs
+    4300166: Sofa
+    4300168: Pillow1
+    4300170: Pillow2
+    4300172: 3dSolid
+    4300174: 3dSolid
+    4300176: 3dSolid
+    4300178: 3dSolid
+    4300180: 3dSolid
+    4300182: 3dSolid
+    4300184: 3dSolid
+    4300186: 3dSolid
+    4300188: 3dSolid
+    4300190: 3dSolid
+    4300192: 3dSolid
+    4300194: 3dSolid
+    4300196: 3dSolid
+    4300198: 3dSolid
+    4300200: 3dSolid
+    4300202: 3dSolid
+    4300204: 3dSolid001
+    4300206: 3dSolid002
+    4300208: 3dSolid003
+    4300210: Flowerpot
+    4300212: Pot
+    4300214: Box001
+    4300216: Box002
+    4300218: Box003
+    4300220: Text001
+    4300222: ChamferBox002
+    4300224: ChamferBox001
+    4300226: Box013
+    4300228: Box012
+    4300230: Box010
+    4300232: Box009
+    4300234: Box008
+    4300236: Box007
+    4300238: Box006
+    4300240: Box005
+    4300242: Box004
+    4300244: BOOK14
+    4300246: pages
+    4300248: Back
+    4300250: Glass
+    4300252: Frame
+    4300254: Mesh01
+    4300256: Mesh02
+    4300258: Mesh03
+    4300260: Mesh04
+    4300262: Mesh05
+    4300264: Mesh06
+    4300266: Mesh07
+    4300268: Mesh08
+    4300270: Mesh09
+    4300272: 07 Picture
+    4300274: Box033
+    4300276: Box026
+    4300278: Box027
+    4300280: Box030
+    4300282: Box031
+    4300284: Box032
+    4300286: beam1
+    4300288: Box034
+    4300290: Box035
+    4300292: behind_drawer001
+    4300294: caps
+    4300296: beam2
+    4300298: beam3
+    6400000: 07 Picture
+    6400002: 3dSolid
+    6400004: 3dSolid 1
+    6400006: 3dSolid 10
+    6400008: 3dSolid 11
+    6400010: 3dSolid 12
+    6400012: 3dSolid 13
+    6400014: 3dSolid 14
+    6400016: 3dSolid 15
+    6400018: 3dSolid 2
+    6400020: 3dSolid 3
+    6400022: 3dSolid 4
+    6400024: 3dSolid 5
+    6400026: 3dSolid 6
+    6400028: 3dSolid 7
+    6400030: 3dSolid 8
+    6400032: 3dSolid 9
+    6400034: 3dSolid001
+    6400036: 3dSolid002
+    6400038: 3dSolid003
+    6400040: 606 Cabine
+    6400042: Back
+    6400044: beam1
+    6400046: beam2
+    6400048: beam3
+    6400050: behind_drawer001
+    6400052: Body_Courtyard_Template002_Window_reference_smd_mesh_0
+    6400054: Body_Courtyard_Template002_Window_reference_smd_mesh_001
+    6400056: BOOK14
+    6400058: Box001
+    6400060: Box002
+    6400062: Box003
+    6400064: Box004
+    6400066: Box005
+    6400068: Box006
+    6400070: Box007
+    6400072: Box008
+    6400074: Box009
+    6400076: Box010
+    6400078: Box012
+    6400080: Box013
+    6400082: Box020
+    6400084: Box021
+    6400086: Box022
+    6400088: Box024
+    6400090: Box025
+    6400092: Box026
+    6400094: Box027
+    6400096: Box030
+    6400098: Box031
+    6400100: Box032
+    6400102: Box033
+    6400104: Box034
+    6400106: Box035
+    6400108: caps
+    6400110: ChamferBox001
+    6400112: ChamferBox002
+    6400114: ChamferBox004
+    6400116: ChamferBox005
+    6400118: ChamferBox006
+    6400120: ChamferBox007
+    6400122: ChamferBox008
+    6400124: ChamferBox04
+    6400126: closet
+    6400128: Cylinder019
+    6400130: Cylinder020
+    6400132: Cylinder021
+    6400134: Cylinder022
+    6400136: Cylinder13
+    6400138: Door_Door1
+    6400140: Door_Frame
+    6400142: doorHandle
+    6400144: doorHandle2
+    6400146: Flowerpot
+    6400148: Frame
+    6400150: frame2
+    6400152: Glass
+    6400154: legs
+    6400156: Line30
+    6400158: Line31
+    6400160: Line32
+    6400162: Line33
+    6400164: Line34
+    6400166: Line35
+    6400168: Line37
+    6400170: Line41
+    6400172: Line42
+    6400174: Mesh01
+    6400176: Mesh02
+    6400178: Mesh03
+    6400180: Mesh04
+    6400182: Mesh05
+    6400184: Mesh06
+    6400186: Mesh07
+    6400188: Mesh08
+    6400190: Mesh09
+    6400192: pages
+    6400194: painting
+    6400196: Pillow
+    6400198: Pillow001
+    6400200: Pillow002
+    6400202: Pillow1
+    6400204: Pillow2
+    6400206: polySurface105
+    6400208: polySurface106
+    6400210: Pot
+    6400212: Rectangle142
+    6400214: Rectangle143
+    6400216: Rectangle148
+    6400218: Rectangle149
+    6400220: Rectangle150
+    6400222: Rectangle151
+    6400224: Rectangle152
+    6400226: Rectangle153
+    6400228: Rectangle154
+    6400230: Rectangle155
+    6400232: Rectangle156
+    6400234: Rectangle157
+    6400236: Rectangle158
+    6400238: Rectangle159
+    6400240: Rectangle160
+    6400242: Rectangle161
+    6400244: Rectangle162
+    6400246: Rectangle163
+    6400248: Rectangle164
+    6400250: Rectangle165
+    6400252: Rectangle166
+    6400254: Rectangle167
+    6400256: Rectangle168
+    6400258: Rectangle169
+    6400260: Rectangle170
+    6400262: Rectangle173
+    6400264: Rectangle174
+    6400266: Rectangle175
+    6400268: Rectangle176
+    6400270: Rectangle177
+    6400272: Rectangle178
+    6400274: Rectangle179
+    6400276: Rectangle180
+    6400278: Rectangle182
+    6400280: Rectangle183
+    6400282: Sheet1
+    6400284: Sheet2
+    6400286: Sofa
+    6400288: Text001
+    6400290: Wall001
+    6400292: "\u043D\u043E\u0436\u043A\u0430_\u0441\u0442\u043E\u043B_001"
+    6400294: "\u043D\u043E\u0436\u043A\u0430_\u0441\u0442\u043E\u043B_002"
+    6400296: "\u043D\u043E\u0436\u043A\u0430_\u0441\u0442\u043E\u043B_003"
+    6400298: "\u043D\u043E\u0436\u043A\u0430_\u0441\u0442\u043E\u043B_004"
+    7400000: Take 001
+    9500000: //RootNode
+  externalObjects: {}
+  materials:
+    importMaterials: 0
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 0
+    importLights: 0
+    swapUVChannels: 0
+    generateSecondaryUV: 1
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 0
+    normalCalculationMode: 4
+  importAnimation: 0
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 1
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
