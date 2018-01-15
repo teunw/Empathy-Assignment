@@ -1,10 +1,15 @@
 ﻿using UnityEngine;
+using VRTK;
 
+[RequireComponent(typeof(VRTK_InteractableObject))]
 public class KeyController : MonoBehaviour {
 
     [Tooltip("The new location the key should move to when out of sight.")]
     public Transform newLocation;
 
+	private VRTK_InteractableObject interactableObject;
+
+	private bool shouldDissapear;
     public bool ShouldDissapear {
         get
         {
@@ -25,26 +30,40 @@ public class KeyController : MonoBehaviour {
         }
     }
 
-    private bool shouldDissapear;
+	private int dissapearCounter = 0;
+	   
 
 	// Use this for initialization
 	void Start () {
+		interactableObject = GetComponent<VRTK_InteractableObject> ();
         ShouldDissapear = false;
+		enabled = false;
 	}
 
     public void OnGrab()
     {
-        ShouldDissapear = true;
+		if (dissapearCounter < 1) 
+		{
+			ShouldDissapear = true;
+			enabled = true;
+		}
     }
+
+	private void Dissapear()
+	{
+		enabled = false;
+		shouldDissapear = false;
+		interactableObject.ForceStopInteracting ();
+		transform.position = newLocation.position;
+		transform.rotation = newLocation.rotation;
+		dissapearCounter++;
+	}
 
     private void Update()
     {
         if (Camera.main != null && shouldDissapear && !VisibilityCheck.IsVisible(Camera.main, gameObject, true, false))
         {
-            enabled = false;
-            shouldDissapear = false;
-            transform.position = newLocation.position;
-            transform.rotation = newLocation.rotation;
+			Dissapear ();
         }
     }
 }
