@@ -4,6 +4,8 @@ using UnityEngine.Video;
 [RequireComponent(typeof(VideoPlayer))]
 public class TelevisionController : MonoBehaviour {
 
+	public Task task;
+
     private VideoPlayer tv;
 
     private float minDelay = 1f;
@@ -18,11 +20,17 @@ public class TelevisionController : MonoBehaviour {
     {
         if (Time.time < nextAvailableTime) return;
 
-        if (tv.isPlaying)
-            tv.Stop();
+		if (tv.isPlaying) {
+			tv.time = 0;
+			tv.Stop ();
+			if (task)
+				task.Complete ();
+		}
         else
             tv.Play();
 
         nextAvailableTime = Time.time + minDelay;
     }
+
+
 }
