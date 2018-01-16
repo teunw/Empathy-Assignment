@@ -73,6 +73,7 @@ GameObject:
   - component: {fileID: 4824649612322818}
   - component: {fileID: 328444814729371834}
   - component: {fileID: 82473251268357850}
+  - component: {fileID: 114644261906475544}
   m_Layer: 0
   m_Name: VideoPlayer
   m_TagString: Untagged
@@ -90,6 +91,21 @@ GameObject:
   - component: {fileID: 4349350809524654}
   m_Layer: 0
   m_Name: VideoSystem
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1648591744460966
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4835794004751696}
+  m_Layer: 0
+  m_Name: ON / OFF Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -200,6 +216,7 @@ Transform:
   - {fileID: 4260334485133194}
   - {fileID: 4801815901249984}
   - {fileID: 4226464252719742}
+  - {fileID: 4835794004751696}
   m_Father: {fileID: 4349350809524654}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: -180}
@@ -254,6 +271,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 4349350809524654}
   m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4835794004751696
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1648591744460966}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.2, y: 0, z: -0.05}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4382159842675382}
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &23192649097480816
 MeshRenderer:
@@ -555,6 +585,17 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 0
+--- !u!114 &114644261906475544
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1307054823275984}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e4a8177173a0be545b10493282efbf8c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!328 &328444814729371834
 VideoPlayer:
   m_ObjectHideFlags: 1
