@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: cd56b2ef126d7c84293bfa923686c85a
-timeCreated: 1516028128
+guid: e4c690b0c182a084bb4ef9406d5443c0
+timeCreated: 1516093057
 licenseType: Free
 ModelImporter:
   serializedVersion: 22
@@ -43,15 +43,14 @@ ModelImporter:
     3300014: Object008
     3300016: //RootNode
     4300000: Teapot001
-    4300002: Object008
-    4300004: Object007
-    4300006: Object006
-    4300008: Object005
-    4300010: Object004
-    4300012: Object003
-    4300014: Object002
-    4300016: Object001
-    9500000: //RootNode
+    4300002: Object001
+    4300004: Object002
+    4300006: Object003
+    4300008: Object004
+    4300010: Object005
+    4300012: Object006
+    4300014: Object007
+    4300016: Object008
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -82,7 +81,7 @@ ModelImporter:
     isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: 1
+    globalScale: 2
     meshCompression: 0
     addColliders: 0
     importVisibility: 1
@@ -126,7 +125,7 @@ ModelImporter:
     hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 2
+  animationType: 0
   humanoidOversampling: 1
   additionalBone: 0
   userData: 
