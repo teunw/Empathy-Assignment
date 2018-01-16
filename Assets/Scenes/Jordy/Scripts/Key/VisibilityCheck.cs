@@ -9,7 +9,7 @@ public class VisibilityCheck {
     {
         List<Collider> colliders = GetCollidersToCheck(go, includeChildren, includeTriggers);
 
-        if (colliders.Count == 0) Debug.LogWarning("VisibilityCheck: No collider(s) present on GameObject");
+		if (colliders.Count == 0) Debug.LogError("VisibilityCheck: No collider(s) present on GameObject '" + go.name + "'");
 
         Plane[] planes = GeometryUtility.CalculateFrustumPlanes(camera);
 

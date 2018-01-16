@@ -18,6 +18,9 @@ public class FadeManager : EventHandler {
         {
             pair.homeObject.PairedObject = pair.hospitalObject.gameObject;
             pair.hospitalObject.PairedObject = pair.homeObject.gameObject;
+			pair.hospitalObject.gameObject.SetActive (false);
+			pair.homeObject.MinDelay = MinDelay;
+			pair.hospitalObject.MinDelay = MinDelay;
             EventManager.Instance.AddListener<FadedEvent>(pair.homeObject.OnFaded);
             EventManager.Instance.AddListener<FadedEvent>(pair.hospitalObject.OnFaded);
         }
