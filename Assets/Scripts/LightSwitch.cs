@@ -5,6 +5,9 @@ public class LightSwitch : MonoBehaviour {
     public Light[] lights;
     private bool isOn = true;
 
+    private float minDelay = 0.5f;
+    private float nextAvailableTime = 0f;
+
     // Initialize
     private void Start()
     {
@@ -14,6 +17,8 @@ public class LightSwitch : MonoBehaviour {
 
     public void ToggleLights()
     {
+        if (Time.time < nextAvailableTime) return;
+
         isOn = !isOn;
 
         SetEnabled(isOn);
@@ -43,5 +48,7 @@ public class LightSwitch : MonoBehaviour {
         {
             lights[i].enabled = state;
         }
+
+        nextAvailableTime = Time.time + minDelay;
     }
 }
