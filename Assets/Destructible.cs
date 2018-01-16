@@ -12,7 +12,7 @@ public class Destructible : MonoBehaviour
 	{
 		var dest = Instantiate(this.DestructibleObject, transform.position, transform.rotation, transform.parent);
 		
-		Destroy(this.gameObject);
+		this.gameObject.SetActive(false);
 	}
 }
 

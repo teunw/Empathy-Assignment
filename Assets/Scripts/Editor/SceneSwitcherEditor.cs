@@ -19,5 +19,14 @@ public class SceneSwitcherEditor : Editor
 			switcher.Home.SetActive(!switcher.Home.activeSelf);
 			switcher.Hospital.SetActive(!switcher.Hospital.activeSelf);
 		}
+		
+		if (GUILayout.Button("Remove childfadescripts"))
+		{
+			var fadeScripts = FindObjectsOfType<ChildFadeScript>();
+			foreach (var childFadeScript in fadeScripts)
+			{
+				DestroyImmediate(childFadeScript);
+			}
+		}
 	}
 }
