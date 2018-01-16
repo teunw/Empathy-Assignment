@@ -21,7 +21,6 @@ GameObject:
   - component: {fileID: 4235773781341324}
   - component: {fileID: 33358159876661192}
   - component: {fileID: 23253852233396548}
-  - component: {fileID: 64982040589578412}
   m_Layer: 0
   m_Name: TableChair
   m_TagString: Untagged
@@ -35,8 +34,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1152913975487210}
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.2472875, y: 0.58920765, z: 0.78411865}
+  m_LocalRotation: {x: 6.123234e-17, y: 1, z: -6.123234e-17, w: 6.123234e-17}
+  m_LocalPosition: {x: -3.9025867, y: 0.58920765, z: -7.1552978}
   m_LocalScale: {x: 12.304334, y: 12.304334, z: 12.304334}
   m_Children: []
   m_Father: {fileID: 0}
@@ -82,18 +81,4 @@ MeshFilter:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1152913975487210}
-  m_Mesh: {fileID: 4300160, guid: 11299d3ef695ab744a8b0db62fe7293c, type: 3}
---- !u!64 &64982040589578412
-MeshCollider:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1152913975487210}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Convex: 0
-  m_CookingOptions: 14
-  m_SkinWidth: 0.01
-  m_Mesh: {fileID: 4300160, guid: 11299d3ef695ab744a8b0db62fe7293c, type: 3}
+  m_Mesh: {fileID: 4300154, guid: bbb9fa77317082d4c923f3ec758823a3, type: 3}
