@@ -157,7 +157,7 @@ GameObject:
   - component: {fileID: 135396648737845094}
   - component: {fileID: 54632782737448950}
   - component: {fileID: 114835516870257130}
-  - component: {fileID: 114416584789998612}
+  - component: {fileID: 114050527969324942}
   m_Layer: 0
   m_Name: SnapDropZone
   m_TagString: Untagged
@@ -176,12 +176,12 @@ GameObject:
   - component: {fileID: 33585759559652030}
   - component: {fileID: 23564708628664878}
   - component: {fileID: 54977090997495560}
-  - component: {fileID: 114664716090433580}
   - component: {fileID: 114510379882742100}
   - component: {fileID: 114561693848849984}
   - component: {fileID: 114306280893040388}
   - component: {fileID: 114085958796181534}
   - component: {fileID: 64882576143168940}
+  - component: {fileID: 114230866571097660}
   m_Layer: 0
   m_Name: Teapot
   m_TagString: Untagged
@@ -1069,6 +1069,59 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CookerStatus: {fileID: 0}
   Teapot: {fileID: 114085958796181534}
+--- !u!114 &114050527969324942
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1589363852745488}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bfac5512b3c9b7e40b8384efa162bf18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnObjectEnteredSnapDropZone:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: VRTK.UnityEventHelper.VRTK_SnapDropZone_UnityEvents+SnapDropZoneEvent,
+      Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  OnObjectExitedSnapDropZone:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: VRTK.UnityEventHelper.VRTK_SnapDropZone_UnityEvents+SnapDropZoneEvent,
+      Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  OnObjectSnappedToDropZone:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 114891955778815662}
+        m_MethodName: SetBoilingSync
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_MethodName: Blink
+        m_Mode: 4
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0.5
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: VRTK.UnityEventHelper.VRTK_SnapDropZone_UnityEvents+SnapDropZoneEvent,
+      Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  OnObjectUnsnappedFromDropZone:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: VRTK.UnityEventHelper.VRTK_SnapDropZone_UnityEvents+SnapDropZoneEvent,
+      Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
 --- !u!114 &114085958796181534
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1084,6 +1137,46 @@ MonoBehaviour:
   HotTime: 20
   DropTime: 1
   ShouldBeDropped: 1
+  OnDropTea:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 114230866571097660}
+        m_MethodName: Destroy
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_MethodName: Blink
+        m_Mode: 4
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0.5
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+--- !u!114 &114230866571097660
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1645871240888186}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8643ffed61811d44a8e2af7e5eb816a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DestructibleObject: {fileID: 1069751597598144, guid: d1483f5b6fe560c4fb6276c7355c6709,
+    type: 2}
 --- !u!114 &114245675631429066
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1155,48 +1248,6 @@ MonoBehaviour:
   useOverrideButton: 0
   allowedUseControllers: 0
   usingState: 0
---- !u!114 &114416584789998612
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1589363852745488}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bfac5512b3c9b7e40b8384efa162bf18, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  OnObjectEnteredSnapDropZone:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: VRTK.UnityEventHelper.VRTK_SnapDropZone_UnityEvents+SnapDropZoneEvent,
-      Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-  OnObjectExitedSnapDropZone:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: VRTK.UnityEventHelper.VRTK_SnapDropZone_UnityEvents+SnapDropZoneEvent,
-      Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-  OnObjectSnappedToDropZone:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 114891955778815662}
-        m_MethodName: SetBoilingSync
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-    m_TypeName: VRTK.UnityEventHelper.VRTK_SnapDropZone_UnityEvents+SnapDropZoneEvent,
-      Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-  OnObjectUnsnappedFromDropZone:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: VRTK.UnityEventHelper.VRTK_SnapDropZone_UnityEvents+SnapDropZoneEvent,
-      Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
 --- !u!114 &114500098767460854
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1257,29 +1308,6 @@ MonoBehaviour:
   onGrabCollisionDelay: 0
   destroyImmediatelyOnThrow: 1
   breakForce: 1500
---- !u!114 &114664716090433580
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1645871240888186}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dc2315305343a584e8758755b54117c5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  clipOnTouch: {fileID: 0}
-  strengthOnTouch: 0
-  durationOnTouch: 0
-  intervalOnTouch: 0.05
-  clipOnGrab: {fileID: 0}
-  strengthOnGrab: 0
-  durationOnGrab: 0
-  intervalOnGrab: 0.05
-  clipOnUse: {fileID: 0}
-  strengthOnUse: 0
-  durationOnUse: 0
-  intervalOnUse: 0.05
 --- !u!114 &114835516870257130
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1296,7 +1324,7 @@ MonoBehaviour:
   snapDuration: 0
   applyScalingOnSnap: 0
   cloneNewOnUnsnap: 0
-  highlightColor: {r: 0, g: 0, b: 0, a: 0}
+  highlightColor: {r: 0.8161765, g: 0.7441609, b: 0.7441609, a: 0.741}
   highlightAlwaysActive: 0
   validObjectListPolicy: {fileID: 0}
   displayDropZoneInEditor: 1
@@ -1314,7 +1342,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ReadyColor: {r: 0, g: 1, b: 0, a: 1}
   BusyColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
-  TimeToBoil: 20
+  TimeToBoil: 0.2
   Cookpad: {fileID: 114046285682575804}
 --- !u!135 &135396648737845094
 SphereCollider:

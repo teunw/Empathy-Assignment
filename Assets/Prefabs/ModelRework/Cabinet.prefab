@@ -21,7 +21,6 @@ GameObject:
   - component: {fileID: 4486820495563860}
   - component: {fileID: 33269781654334580}
   - component: {fileID: 23843079534733718}
-  - component: {fileID: 64491573746393140}
   m_Layer: 0
   m_Name: Cabinet
   m_TagString: Untagged
@@ -36,7 +35,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1342771540551132}
   m_LocalRotation: {x: 0.9999964, y: -0.000000043466272, z: 0.002683136, w: 0.000000059488233}
-  m_LocalPosition: {x: -0.6589764, y: 0, z: 6.036505}
+  m_LocalPosition: {x: -0.6589763, y: 0, z: 6.036505}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -57,7 +56,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_Materials:
   - {fileID: 2100000, guid: 10e1abcd17ef5bc4c81fd07aabb1cef1, type: 2}
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100034, guid: bbb9fa77317082d4c923f3ec758823a3, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -83,18 +82,4 @@ MeshFilter:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1342771540551132}
-  m_Mesh: {fileID: 4300140, guid: 11299d3ef695ab744a8b0db62fe7293c, type: 3}
---- !u!64 &64491573746393140
-MeshCollider:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1342771540551132}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Convex: 0
-  m_CookingOptions: 14
-  m_SkinWidth: 0.01
-  m_Mesh: {fileID: 4300140, guid: 11299d3ef695ab744a8b0db62fe7293c, type: 3}
+  m_Mesh: {fileID: 4300132, guid: bbb9fa77317082d4c923f3ec758823a3, type: 3}
