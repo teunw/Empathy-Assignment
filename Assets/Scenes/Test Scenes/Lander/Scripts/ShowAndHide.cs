@@ -18,9 +18,10 @@ public class ShowAndHide : MonoBehaviour {
     }
 
     // Update is called once per frame
-    void Update () {
-
-	}
+    void Update ()
+    {
+        renderer.enabled = true;
+    }
 
     IEnumerator ShowObject()
     {
