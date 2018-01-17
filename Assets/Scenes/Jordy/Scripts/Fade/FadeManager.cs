@@ -7,11 +7,20 @@ public class FadeManager : EventHandler {
 
     public FadePair[] pairs;
 
+
+	void Awake()
+	{
+		if (StateManager.Instance.CurrentState == State.MID_STORY) {
+			StateManager.Instance.SetState (State.SECOND_HOMESCENE);
+			Invoke ("FadeToHospital", 3f); // start fading after 3 seconds
+		} else {
+			StateManager.Instance.SetState (State.FIRST_HOMESCENE);
+		}
+	}
+
 	// Use this for initialization
 	void Start () {
-        InitializePairs();
-		if (EnableDisableFade.SHOULD_FADE)
-			FadeToHospital ();
+		InitializePairs();
     }
 
     public void InitializePairs()
