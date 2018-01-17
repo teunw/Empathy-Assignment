@@ -26,7 +26,7 @@ public class TaskManager : EventHandler {
 
     private void OnActiveTask(Task task)
     {
-
+		
     }
 
     private void OnFinishedTask(Task task)
@@ -54,7 +54,13 @@ public class TaskManager : EventHandler {
 
     private void RemoveTask(Task task)
     {
+		Debug.Log ("Removing task: " + task.description);
+
         if (tasks.Contains(task)) tasks.Remove(task);
+
+		foreach (Task t in tasks) {
+			Debug.Log ("Remaining task: " + t.description);
+		}
     }
 
     private void OnTaskStateChanged(TaskStateChanged e)
@@ -62,7 +68,6 @@ public class TaskManager : EventHandler {
         switch (e.Task.State)
         {
             case TaskState.TODO:
-
                 break;
             case TaskState.ACTIVE:
                 OnActiveTask(e.Task);

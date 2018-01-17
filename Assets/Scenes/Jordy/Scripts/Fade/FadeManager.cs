@@ -10,6 +10,8 @@ public class FadeManager : EventHandler {
 	// Use this for initialization
 	void Start () {
         InitializePairs();
+		if (EnableDisableFade.SHOULD_FADE)
+			FadeToHospital ();
     }
 
     public void InitializePairs()

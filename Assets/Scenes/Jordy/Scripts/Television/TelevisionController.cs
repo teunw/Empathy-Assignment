@@ -5,6 +5,8 @@ using UnityEngine.Video;
 public class TelevisionController : MonoBehaviour {
 
 	public Task task;
+	public Renderer screenRenderer;
+	public Material offMaterial;
 
     private VideoPlayer tv;
 
@@ -21,7 +23,6 @@ public class TelevisionController : MonoBehaviour {
         if (Time.time < nextAvailableTime) return;
 
 		if (tv.isPlaying) {
-			tv.time = 0;
 			tv.Stop ();
 			if (task)
 				task.Complete ();
@@ -32,5 +33,22 @@ public class TelevisionController : MonoBehaviour {
         nextAvailableTime = Time.time + minDelay;
     }
 
+	public void TurnOn()
+	{
+		if (!tv.isPlaying) {
+			tv.Play();
+		}
+	}
 
+	public void TurnOff()
+	{
+		if (tv.isPlaying) {
+			tv.Stop ();
+			if (task) 
+			{
+				task.Complete ();
+				screenRenderer.material = offMaterial;
+			}
+		}
+	}
 }

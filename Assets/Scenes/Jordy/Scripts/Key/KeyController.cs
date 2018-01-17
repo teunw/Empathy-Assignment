@@ -64,7 +64,7 @@ public class KeyController : MonoBehaviour {
 		interactableObject.ForceStopInteracting ();
         Transform location = GetRandomLocation();
 		transform.position = location.position;
-		transform.rotation = location.rotation;
+		//transform.rotation = location.rotation;
 		dissapearCounter++;
 	}
 

@@ -27,9 +27,7 @@ public class Teapot : MonoBehaviour
     public IEnumerator SetDropTimer(float time)
     {
         yield return new WaitForGrab(this.GetComponent<VRTK_InteractableObject>());
-        Debug.Log("Grabbed");
         yield return new WaitForSeconds(time);
-        Debug.Log("Dropped");
         DropTea();
     }
 

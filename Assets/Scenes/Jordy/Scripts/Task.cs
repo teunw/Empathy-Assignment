@@ -25,7 +25,7 @@ public class Task : MonoBehaviour{
 
     public void Complete()
     {
-        State = TaskState.FINISHED;
+		SetState (TaskState.FINISHED);
     }
 
     public void SetState(TaskState newState)

@@ -5,10 +5,23 @@ using VRTK;
 
 public class BlinkUtility : MonoBehaviour {
 
+	private float defaultDuration = 1.0f;
+
 	public void Blink(float duration)
 	{
 		VRTK_SDK_Bridge.HeadsetFade(Color.black, 0f, true);
 		StartCoroutine(BlinkReset(duration));
+	}
+
+	public void BlinkDelayed(float delay)
+	{
+		StartCoroutine (BlinkDelayed (defaultDuration, delay));
+	}
+
+	private IEnumerator BlinkDelayed(float duration, float delay)
+	{
+		yield return new WaitForSeconds (delay);
+		Blink (duration);
 	}
 
 	private IEnumerator BlinkReset(float dur)
