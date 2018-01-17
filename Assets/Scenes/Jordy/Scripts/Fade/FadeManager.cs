@@ -1,4 +1,7 @@
-﻿using UnityEngine;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using UnityEngine;
 
 public class FadeManager : EventHandler {
 
@@ -7,6 +10,7 @@ public class FadeManager : EventHandler {
 
     public FadePair[] pairs;
 
+    private List<Fade> fadeableObjects = new List<Fade>();
 
 	void Awake()
 	{
@@ -23,6 +27,16 @@ public class FadeManager : EventHandler {
 		InitializePairs();
     }
 
+    private void LateUpdate()
+    {
+        if (fadeableObjects.Count < 1) return;
+
+        int maxPriority = fadeableObjects.Max(x => x.Priority);
+        Fade fade = fadeableObjects.First(x => x.Priority == maxPriority);
+        FadeObject(fade);
+        fadeableObjects.Clear();
+    }
+
     public void InitializePairs()
     {
         foreach (FadePair pair in pairs)
@@ -32,8 +46,24 @@ public class FadeManager : EventHandler {
 			pair.hospitalObject.gameObject.SetActive (false);
 			pair.homeObject.MinDelay = MinDelay;
 			pair.hospitalObject.MinDelay = MinDelay;
+            pair.homeObject.Priority = pair.priority;
+            pair.hospitalObject.Priority = pair.priority;
             EventManager.Instance.AddListener<FadedEvent>(pair.homeObject.OnFaded);
             EventManager.Instance.AddListener<FadedEvent>(pair.hospitalObject.OnFaded);
+        }
+    }
+
+    public override void SubscribeEvents()
+    {
+        EventManager.Instance.AddListener<CanFadeEvent>(OnCanFade);
+    }
+
+    public override void UnsubscribeEvents()
+    {
+        foreach (FadePair pair in pairs)
+        {
+            EventManager.Instance.RemoveListener<FadedEvent>(pair.homeObject.OnFaded);
+            EventManager.Instance.RemoveListener<FadedEvent>(pair.hospitalObject.OnFaded);
         }
     }
 
@@ -53,17 +83,23 @@ public class FadeManager : EventHandler {
         }
     }
 
-    public override void SubscribeEvents()
+    private void AddFadableObject(Fade fade)
     {
-        
+        if (!fadeableObjects.Contains(fade))
+            fadeableObjects.Add(fade);
     }
 
-    public override void UnsubscribeEvents()
+    private void FadeObject(Fade fade)
     {
-        foreach (FadePair pair in pairs)
-        {
-            EventManager.Instance.RemoveListener<FadedEvent>(pair.homeObject.OnFaded);
-            EventManager.Instance.RemoveListener<FadedEvent>(pair.hospitalObject.OnFaded);
-        }
+        fade.transform.gameObject.SetActive(false);
+        fade.PairedObject.gameObject.SetActive(true);
+        fade.PairedObject.GetComponent<Fade>().ShouldFade = false;
+        fade.ShouldFade = false;
+        EventManager.Instance.Invoke(new FadedEvent() { NextTimeToFade = Time.time + MinDelay });
+    }
+
+    private void OnCanFade(CanFadeEvent e)
+    {
+        AddFadableObject(e.FadeableObject);
     }
 }

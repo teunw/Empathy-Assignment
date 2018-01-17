@@ -6,4 +6,5 @@ using UnityEngine;
 public class FadePair {
     public Fade homeObject;
     public Fade hospitalObject;
+    public int priority;
 }
