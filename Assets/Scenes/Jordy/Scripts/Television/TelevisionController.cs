@@ -15,7 +15,13 @@ public class TelevisionController : MonoBehaviour {
 
     private void Start()
     {
-        tv = GetComponent<VideoPlayer>();
+
+	    
+	    tv = GetComponent<VideoPlayer>();
+	    if (StateManager.Instance.CurrentState == State.FIRST_HOMESCENE)
+	    {
+		    TurnOn();
+	    }
     }
 
     public void ToggleOnOff()
@@ -35,6 +41,7 @@ public class TelevisionController : MonoBehaviour {
 
 	public void TurnOn()
 	{
+		
 		if (!tv.isPlaying) {
 			tv.Play();
 		}
