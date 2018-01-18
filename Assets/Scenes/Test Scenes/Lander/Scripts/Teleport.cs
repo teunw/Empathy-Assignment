@@ -23,6 +23,14 @@ public class Teleport : MonoBehaviour {
 			Application.LoadLevel(levelToLoad);
 		}
 	}
+
+	public void ExitGame()
+	{
+		if (canTeleport)
+		{
+			Application.Quit();
+		}
+	}
 	
 	// Update is called once per frame
 	IEnumerator TeleportAvailable () {

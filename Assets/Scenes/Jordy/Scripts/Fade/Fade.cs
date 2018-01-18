@@ -26,7 +26,8 @@ public class Fade : MonoBehaviour {
     void Update () {
 		if (shouldFade && Camera.main != null && !VisibilityCheck.IsVisible(Camera.main, gameObject, true, false))
         {
-            EventManager.Instance.Invoke(new CanFadeEvent() { FadeableObject = this });
+	        FadeManager.Instance.AddFadableObject(this);
+            //EventManager.Instance.Invoke(new CanFadeEvent() { FadeableObject = this });
         }
 	}
 }
