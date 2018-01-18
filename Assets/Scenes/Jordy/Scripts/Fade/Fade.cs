@@ -24,6 +24,7 @@ public class Fade : MonoBehaviour {
 
     // Update is called once per frame
     void Update () {
+	    
 		if (shouldFade && Camera.main != null && !VisibilityCheck.IsVisible(Camera.main, gameObject, true, false))
         {
 	        FadeManager.Instance.AddFadableObject(this);

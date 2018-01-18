@@ -21,16 +21,6 @@ public class FadeManager : EventHandler
 
     private float lastFadeTime = 0f;
 
-	void Awake()
-	{
-		if (StateManager.Instance.CurrentState == State.MID_STORY) {
-			StateManager.Instance.SetState (State.SECOND_HOMESCENE);
-			Invoke ("FadeToHospital", 5f); // start fading after 3 seconds
-		} else {
-			StateManager.Instance.SetState (State.FIRST_HOMESCENE);
-		}
-	}
-
 	// Use this for initialization
 	void Start () {
 		InitializePairs();
@@ -58,10 +48,18 @@ public class FadeManager : EventHandler
     public override void SubscribeEvents()
     {
         EventManager.Instance.AddListener<CanFadeEvent>(OnCanFade);
+        EventManager.Instance.AddListener<EndFaseEvent>(OnEndFase);
     }
 
     public override void UnsubscribeEvents()
     {
+        EventManager.Instance.RemoveListener<CanFadeEvent>(OnCanFade);
+        EventManager.Instance.RemoveListener<EndFaseEvent>(OnEndFase);
+    }
+
+    private void OnEndFase(EndFaseEvent e)
+    {
+        Invoke ("FadeToHospital", 3f); // start fading after 3 seconds
     }
 
     public void FadeToHome()
