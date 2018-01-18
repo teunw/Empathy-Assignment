@@ -2,8 +2,16 @@
 using System.Linq;
 using UnityEngine;
 
-public class FadeManager : EventHandler {
+public class FadeManager : EventHandler
+{
+    private static FadeManager instance = new FadeManager();
 
+    public static FadeManager Instance {
+        get {
+            return instance;
+        }
+    }
+    
     [Tooltip("The minimum delay between each fade.")]
     public float MinDelay = 5f;
 
@@ -72,7 +80,7 @@ public class FadeManager : EventHandler {
         }
     }
 
-    private void AddFadableObject(Fade fade)
+    public void AddFadableObject(Fade fade)
     {
         if (!fadeableObjects.Contains(fade))
             fadeableObjects.Add(fade);
@@ -98,6 +106,6 @@ public class FadeManager : EventHandler {
 
     private void OnCanFade(CanFadeEvent e)
     {
-        AddFadableObject(e.FadeableObject);
+        //AddFadableObject(e.FadeableObject);
     }
 }

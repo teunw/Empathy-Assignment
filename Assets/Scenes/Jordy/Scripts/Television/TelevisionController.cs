@@ -12,7 +12,7 @@ public class TelevisionController : MonoBehaviour {
     private VideoPlayer tv;
     private AudioSource audioSource;
 
-    private float minDelay = 1f;
+    private float minDelay = 0.5f;
     private float nextAvailableTime = 0f;
 
     private void Start()
@@ -44,7 +44,6 @@ public class TelevisionController : MonoBehaviour {
 
 	public void TurnOn()
 	{
-		
 		if (!tv.isPlaying) {
 			tv.Play();
 		}

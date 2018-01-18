@@ -54,13 +54,7 @@ public class TaskManager : EventHandler {
 
     private void RemoveTask(Task task)
     {
-		Debug.Log ("Removing task: " + task.description);
-
         if (tasks.Contains(task)) tasks.Remove(task);
-
-		foreach (Task t in tasks) {
-			Debug.Log ("Remaining task: " + t.description);
-		}
     }
 
     private void OnTaskStateChanged(TaskStateChanged e)
