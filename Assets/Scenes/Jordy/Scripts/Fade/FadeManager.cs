@@ -5,19 +5,19 @@ using UnityEngine;
 public class FadeManager : EventHandler {
 
     [Tooltip("The minimum delay between each fade.")]
-    public float MinDelay = 3f;
+    public float MinDelay = 5f;
 
     public FadePair[] pairs;
 
     private List<Fade> fadeableObjects = new List<Fade>();
 
-    private float nextTimeToFade = 0f;
+    private float lastFadeTime = 0f;
 
 	void Awake()
 	{
 		if (StateManager.Instance.CurrentState == State.MID_STORY) {
 			StateManager.Instance.SetState (State.SECOND_HOMESCENE);
-			Invoke ("FadeToHospital", 3f); // start fading after 3 seconds
+			Invoke ("FadeToHospital", 5f); // start fading after 3 seconds
 		} else {
 			StateManager.Instance.SetState (State.FIRST_HOMESCENE);
 		}
@@ -30,8 +30,8 @@ public class FadeManager : EventHandler {
 
     private void LateUpdate()
     {
-        if (fadeableObjects.Count == 0 && Time.time > nextTimeToFade) return;
-
+        if (fadeableObjects.Count < 1 || Time.time < lastFadeTime + MinDelay) return;
+        
         FadeHighestPriority();
     }
 
@@ -83,6 +83,7 @@ public class FadeManager : EventHandler {
         int maxPriority = fadeableObjects.Max(x => x.Priority);
         Fade fade = fadeableObjects.First(x => x.Priority == maxPriority);
         FadeObject(fade);
+        lastFadeTime = Time.time;
         fadeableObjects.Clear();
     }
 
@@ -92,7 +93,6 @@ public class FadeManager : EventHandler {
         fade.PairedObject.gameObject.SetActive(true);
         fade.PairedObject.GetComponent<Fade>().ShouldFade = false;
         fade.ShouldFade = false;
-        nextTimeToFade = Time.time + MinDelay;
         //EventManager.Instance.Invoke(new FadedEvent() { NextTimeToFade = Time.time + MinDelay });
     }
 
