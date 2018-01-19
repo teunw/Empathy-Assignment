@@ -17,6 +17,5 @@ public class OnEndFase : EventHandler {
 	private void DestroySelf(EndFaseEvent e)
 	{
 		gameObject.SetActive(false);
-		//Destroy(gameObject);
 	}
 }

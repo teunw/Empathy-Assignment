@@ -19,6 +19,7 @@ public class Task : MonoBehaviour{
     private void Start()
     {
         if (!postIt) Debug.LogWarning("Post-it needs to be set!");
+        description = description.Replace("\\n", "\n");
         postIt.Text = description;
         State = startState;
     }
