@@ -1558,7 +1558,7 @@ TextMesh:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 315245444}
   m_Text: "Samen met haar man wonen ze in een \ngezellig huisje waar ze zich artistiek
-    kan uiten."
+    kan uiten. \nSamen hebben ze twee kinderen."
   m_OffsetZ: 0
   m_CharacterSize: 1
   m_LineSpacing: 1
@@ -4462,7 +4462,7 @@ TextMesh:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 848924206}
-  m_Text: 'Dit is Martha, een 62 jarige fotograaf die
+  m_Text: 'Dit is Martha, een 74 jarige fotograaf die
 
     haar dagelijkse leven in beeld zet.'
   m_OffsetZ: 0
@@ -6232,12 +6232,12 @@ Prefab:
     - target: {fileID: 224000012623161658, guid: d46cf6b1ad9d84a48ae7548a2a6b41b3,
         type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: 967
+      value: 1032
       objectReference: {fileID: 0}
     - target: {fileID: 224000012623161658, guid: d46cf6b1ad9d84a48ae7548a2a6b41b3,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -70
       objectReference: {fileID: 0}
     - target: {fileID: 224000012623161658, guid: d46cf6b1ad9d84a48ae7548a2a6b41b3,
         type: 2}
@@ -6247,7 +6247,7 @@ Prefab:
     - target: {fileID: 224000012623161658, guid: d46cf6b1ad9d84a48ae7548a2a6b41b3,
         type: 2}
       propertyPath: m_SizeDelta.y
-      value: 0
+      value: 120
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d46cf6b1ad9d84a48ae7548a2a6b41b3, type: 2}
@@ -9542,9 +9542,8 @@ TextMesh:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1684977905}
-  m_Text: 'De kinderen komen wekelijks helpen en laten
-
-    in het huis post-it''s achter die Martha kan uitvoeren.'
+  m_Text: "Anouk en Sjors merken dat hun moeder \nsteeds vaker dingen vergeet en plakken
+    post-its op,\n zodat ze niet vergeet om voor haarzelf te zorgen."
   m_OffsetZ: 0
   m_CharacterSize: 1
   m_LineSpacing: 1
