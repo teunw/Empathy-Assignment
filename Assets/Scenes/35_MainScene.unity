@@ -39893,7 +39893,7 @@ Prefab:
     - target: {fileID: 224000012623161658, guid: d46cf6b1ad9d84a48ae7548a2a6b41b3,
         type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: 1032
+      value: 791
       objectReference: {fileID: 0}
     - target: {fileID: 224000012623161658, guid: d46cf6b1ad9d84a48ae7548a2a6b41b3,
         type: 2}
@@ -88090,7 +88090,7 @@ MonoBehaviour:
     priority: 0
   - homeObject: {fileID: 1320951852}
     hospitalObject: {fileID: 272307016}
-    priority: 0
+    priority: 5
   - homeObject: {fileID: 960381581}
     hospitalObject: {fileID: 1448471233}
     priority: 0

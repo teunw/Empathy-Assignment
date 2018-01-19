@@ -4,14 +4,6 @@ using UnityEngine;
 
 public class FadeManager : EventHandler
 {
-    private static FadeManager instance = new FadeManager();
-
-    public static FadeManager Instance {
-        get {
-            return instance;
-        }
-    }
-    
     [Tooltip("The minimum delay between each fade.")]
     public float MinDelay = 5f;
 
@@ -28,9 +20,13 @@ public class FadeManager : EventHandler
 
     private void LateUpdate()
     {
-        if (fadeableObjects.Count < 1 || Time.time < lastFadeTime + MinDelay) return;
-        
-        FadeHighestPriority();
+
+        if (fadeableObjects.Count > 0 && Time.time > lastFadeTime + MinDelay)
+        {
+            FadeHighestPriority();
+        }
+
+        fadeableObjects.Clear();
     }
 
     public void InitializePairs()
@@ -90,7 +86,6 @@ public class FadeManager : EventHandler
         Fade fade = fadeableObjects.First(x => x.Priority == maxPriority);
         FadeObject(fade);
         lastFadeTime = Time.time;
-        fadeableObjects.Clear();
     }
 
     private void FadeObject(Fade fade)
@@ -99,11 +94,10 @@ public class FadeManager : EventHandler
         fade.PairedObject.gameObject.SetActive(true);
         fade.PairedObject.GetComponent<Fade>().ShouldFade = false;
         fade.ShouldFade = false;
-        //EventManager.Instance.Invoke(new FadedEvent() { NextTimeToFade = Time.time + MinDelay });
     }
 
     private void OnCanFade(CanFadeEvent e)
     {
-        //AddFadableObject(e.FadeableObject);
+        AddFadableObject(e.FadeableObject);
     }
 }
