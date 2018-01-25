@@ -4,14 +4,6 @@ using UnityEngine;
 
 public class FadeManager : EventHandler
 {
-    private static FadeManager instance = new FadeManager();
-
-    public static FadeManager Instance {
-        get {
-            return instance;
-        }
-    }
-    
     [Tooltip("The minimum delay between each fade.")]
     public float MinDelay = 5f;
 
@@ -21,16 +13,6 @@ public class FadeManager : EventHandler
 
     private float lastFadeTime = 0f;
 
-	void Awake()
-	{
-		if (StateManager.Instance.CurrentState == State.MID_STORY) {
-			StateManager.Instance.SetState (State.SECOND_HOMESCENE);
-			Invoke ("FadeToHospital", 5f); // start fading after 3 seconds
-		} else {
-			StateManager.Instance.SetState (State.FIRST_HOMESCENE);
-		}
-	}
-
 	// Use this for initialization
 	void Start () {
 		InitializePairs();
@@ -38,9 +20,13 @@ public class FadeManager : EventHandler
 
     private void LateUpdate()
     {
-        if (fadeableObjects.Count < 1 || Time.time < lastFadeTime + MinDelay) return;
-        
-        FadeHighestPriority();
+
+        if (fadeableObjects.Count > 0 && Time.time > lastFadeTime + MinDelay)
+        {
+            FadeHighestPriority();
+        }
+
+        fadeableObjects.Clear();
     }
 
     public void InitializePairs()
@@ -58,10 +44,18 @@ public class FadeManager : EventHandler
     public override void SubscribeEvents()
     {
         EventManager.Instance.AddListener<CanFadeEvent>(OnCanFade);
+        EventManager.Instance.AddListener<EndFaseEvent>(OnEndFase);
     }
 
     public override void UnsubscribeEvents()
     {
+        EventManager.Instance.RemoveListener<CanFadeEvent>(OnCanFade);
+        EventManager.Instance.RemoveListener<EndFaseEvent>(OnEndFase);
+    }
+
+    private void OnEndFase(EndFaseEvent e)
+    {
+        Invoke ("FadeToHospital", 3f); // start fading after 3 seconds
     }
 
     public void FadeToHome()
@@ -92,7 +86,6 @@ public class FadeManager : EventHandler
         Fade fade = fadeableObjects.First(x => x.Priority == maxPriority);
         FadeObject(fade);
         lastFadeTime = Time.time;
-        fadeableObjects.Clear();
     }
 
     private void FadeObject(Fade fade)
@@ -101,11 +94,10 @@ public class FadeManager : EventHandler
         fade.PairedObject.gameObject.SetActive(true);
         fade.PairedObject.GetComponent<Fade>().ShouldFade = false;
         fade.ShouldFade = false;
-        //EventManager.Instance.Invoke(new FadedEvent() { NextTimeToFade = Time.time + MinDelay });
     }
 
     private void OnCanFade(CanFadeEvent e)
     {
-        //AddFadableObject(e.FadeableObject);
+        AddFadableObject(e.FadeableObject);
     }
 }
